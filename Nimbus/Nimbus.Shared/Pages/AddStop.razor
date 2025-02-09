@@ -1,0 +1,52 @@
+﻿@using Nimbus.Shared.Services;
+@inject IAddressRepository AddressRepository;
+@inject IFormFactor FormFactor;
+@page "/newStop"
+
+<PageTitle>AddStop</PageTitle>
+
+<h1>Add new Stops</h1>
+
+<div class="d-flex">
+<form method="post">
+    <div>
+    <label for="streetNumber">Street Number:</label>
+    <input type="number" name="streetNumber" @bind="streetNumber" />
+    </div> <div>
+    <label for="streetName">Street Name:</label>
+    <input type="text" name="streetName" @bind="streetName" />
+    </div> <div>
+    <label for="city">City:</label>
+    <input type="text" name="city" @bind="city"/>
+    </div> <div>
+    <label for="state">State:</label>
+    <input type="text" name="state" @bind="state"/>
+    </div> <div>
+    <label for="zipCode">Zip Code:</label>
+    <input type="number" name="zipCode" @bind="zipCode"/>
+    </div>
+</form>
+</div>
+
+<p role="presentation">Stops Added: @stopsAdded @* @newAddress.streetNumber @newAddress.streetName, @newAddress.city, @newAddress.state @newAddress.zipCode *@</p>
+
+<button class="btn btn-primary" @onclick="AddNewStop">Confirm</button>
+
+@code {
+    public int stopsAdded = 0;
+    public Address newAddress;
+    //public string addedStop;
+    public int streetNumber;
+    public string streetName;
+    public string city;
+    public string state;
+    public int zipCode;
+    private void AddNewStop()
+    {
+    newAddress = AddressRepository.CreateNewAddress(streetNumber, streetName, city, state, zipCode);
+    AddressRepository.AddStop(newAddress);
+        stopsAdded++;
+    }
+    //addedStop = $"{streetNumber} {streetName}, {city}, {state} {zipCode}";
+    
+}

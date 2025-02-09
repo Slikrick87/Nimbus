@@ -1,0 +1,40 @@
+﻿@using Nimbus.Shared.Services
+@inject IAddressRepository AddressRepository;
+@page "/manifest"
+@code {
+    private int stopCounter = 0;
+    public List<Address> allStops = new List<Address>();
+
+    protected override void OnInitialized()
+    {
+        GetManifest();
+    }
+    public void GetManifest()
+    {
+        allStops = AddressRepository.GetAllAddresses();
+    }
+}
+<h3>Manifest</h3>
+<ul>@foreach (Address stop in allStops)
+    {
+        stopCounter++;
+        if (stopCounter>0)
+        {
+            <li>Stop @stopCounter: @stop.streetNumber @stop.streetName, @stop.city,@stop.state @stop.zipCode</li>
+        }
+    }
+</ul>
+<button class="btn btn-primary" @onclick="GetManifest">Get Manifest</button>
+@* @code {
+    private int stopCounter = 0;
+    public List<Address> allStops = new List<Address>();
+
+    public void GetManifest()
+    {
+        allStops = AddressRepository.GetAllAddresses().ToList();
+    }
+    protected override void OnInitialized()
+    {
+        GetManifest();
+    } *@
+

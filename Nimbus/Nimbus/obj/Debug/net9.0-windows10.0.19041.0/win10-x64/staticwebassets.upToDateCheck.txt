@@ -1,0 +1,4 @@
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\wwwroot\app.css
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\wwwroot\index.html
+wwwroot\app.css
+wwwroot\index.html
