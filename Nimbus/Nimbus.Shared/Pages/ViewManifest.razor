@@ -12,17 +12,21 @@
     public void GetManifest()
     {
         allStops = AddressRepository.GetAllAddresses();
+        stopCounter = 0;
     }
 }
 <h3>Manifest</h3>
 <ul>@foreach (Address stop in allStops)
     {
-        stopCounter++;
-        if (stopCounter>0)
+
+        if (allStops.Count()>0)
         {
+            stopCounter++;
             <li>Stop @stopCounter: @stop.streetNumber @stop.streetName, @stop.city,@stop.state @stop.zipCode</li>
         }
+        
     }
+    
 </ul>
 <button class="btn btn-primary" @onclick="GetManifest">Get Manifest</button>
 @* @code {

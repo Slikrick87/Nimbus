@@ -16,3 +16,11 @@ C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\D
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.build.json

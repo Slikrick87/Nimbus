@@ -527,3 +527,16 @@ C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\obj\Debug\ne
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Nimbus.sourcelink.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Data.Sqlite.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.Relational.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Caching.Abstractions.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Caching.Memory.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyModel.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll

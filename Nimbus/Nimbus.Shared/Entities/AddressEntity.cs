@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nimbus.Shared.Services
+namespace Nimbus.Shared.Entities
 {
     public class Address
     {
@@ -19,6 +19,9 @@ namespace Nimbus.Shared.Services
         public string state;
         [Required]
         public int zipCode;
+        public bool isDelivered = false;
+        public DateTime timeDelivered;
+
         public Address(int streetNumber, string streetName, string city, string state, int zipCode)
         {
             this.streetNumber = streetNumber;
