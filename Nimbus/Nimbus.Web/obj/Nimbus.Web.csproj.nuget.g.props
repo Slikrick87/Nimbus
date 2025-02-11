@@ -18,5 +18,6 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">C:\Users\rjtom\.nuget\packages\microsoft.aspnetcore.components.webassembly.server\9.0.0</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
+    <PkgFluentAssertions Condition=" '$(PkgFluentAssertions)' == '' ">C:\Users\rjtom\.nuget\packages\fluentassertions\8.0.1</PkgFluentAssertions>
   </PropertyGroup>
 </Project>

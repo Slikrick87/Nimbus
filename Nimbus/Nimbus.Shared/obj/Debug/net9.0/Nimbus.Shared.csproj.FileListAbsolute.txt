@@ -26,9 +26,9 @@ C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\D
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Nimbus.Shared.props
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Nimbus.Shared.props
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.pack.json
-C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\Nimbus.Shared.dll
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\refint\Nimbus.Shared.dll
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\Nimbus.Shared.pdb
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\ref\Nimbus.Shared.dll
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\Nimbus.Shared.sourcelink.json
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

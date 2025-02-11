@@ -1,4 +1,5 @@
 ﻿@using Nimbus.Shared.Services;
+@using Nimbus.Shared.Entities;
 @inject IAddressRepository AddressRepository;
 @inject IFormFactor FormFactor;
 @page "/newStop"
@@ -12,18 +13,19 @@
     <div>
     <label for="streetNumber">Street Number:</label>
     <input type="number" name="streetNumber" @bind="streetNumber" />
-    </div> <div>
+    <br/>
     <label for="streetName">Street Name:</label>
     <input type="text" name="streetName" @bind="streetName" />
-    </div> <div>
+    <br/>
     <label for="city">City:</label>
     <input type="text" name="city" @bind="city"/>
-    </div> <div>
+    <br/>
     <label for="state">State:</label>
     <input type="text" name="state" @bind="state"/>
-    </div> <div>
+    <br/>
     <label for="zipCode">Zip Code:</label>
     <input type="number" name="zipCode" @bind="zipCode"/>
+    <br/>
     </div>
 </form>
 </div>
@@ -46,6 +48,7 @@
     newAddress = AddressRepository.CreateNewAddress(streetNumber, streetName, city, state, zipCode);
     AddressRepository.AddStop(newAddress);
         stopsAdded++;
+
     }
     //addedStop = $"{streetNumber} {streetName}, {city}, {state} {zipCode}";
     

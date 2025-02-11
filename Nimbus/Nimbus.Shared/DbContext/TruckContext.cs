@@ -26,9 +26,10 @@ namespace Nimbus.Shared
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<TruckEntity>().ToTable("Trucks");
-            //modelBuilder.Entity<Route>().ToTable("Routes");
-            //modelBuilder.Entity<AddressEntity>().ToTable("Addresses");
+            modelBuilder.Entity<Route>().ToTable("Routes");
+            modelBuilder.Entity<Address>().ToTable("Addresses");
         }
     }
 }

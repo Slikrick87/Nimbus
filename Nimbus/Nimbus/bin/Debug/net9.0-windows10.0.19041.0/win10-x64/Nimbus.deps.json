@@ -32,6 +32,14 @@
           }
         }
       },
+      "FluentValidation/11.11.0": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.11.0.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/9.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Metadata": "9.0.0",
@@ -196,6 +204,18 @@
           "lib/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
             "assemblyVersion": "9.0.1.0",
             "fileVersion": "9.0.124.61002"
+          }
+        }
+      },
+      "Microsoft.Exchange.WebServices/2.2.0": {
+        "runtime": {
+          "lib/40/Microsoft.Exchange.WebServices.Auth.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.913.0"
+          },
+          "lib/40/Microsoft.Exchange.WebServices.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.913.15"
           }
         }
       },
@@ -792,9 +812,11 @@
       "System.Text.Json/9.0.1": {},
       "Nimbus.Shared/1.0.0": {
         "dependencies": {
+          "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.1",
-          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1"
+          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
+          "Microsoft.Exchange.WebServices": "2.2.0"
         },
         "runtime": {
           "Nimbus.Shared.dll": {
@@ -823,6 +845,13 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidation/11.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cyIVdQBwSipxWG8MA3Rqox7iNbUNUTK5bfJi9tIdm4CAfH71Oo5ABLP4/QyrUwuakqpUEPGtE43BDddvEehuYw==",
+      "path": "fluentvalidation/11.11.0",
+      "hashPath": "fluentvalidation.11.11.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/9.0.0": {
       "type": "package",
@@ -928,6 +957,13 @@
       "sha512": "sha512-eAo/tMaOLN2KI3KYwnhl9Ibmtry3gdRpVxdSxzyFiS1q8zvPNKtHU+fi1723JyuQEhUGpp551aQZIKGMmenk+Q==",
       "path": "microsoft.entityframeworkcore.sqlite.core/9.0.1",
       "hashPath": "microsoft.entityframeworkcore.sqlite.core.9.0.1.nupkg.sha512"
+    },
+    "Microsoft.Exchange.WebServices/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NlkaTD0uWtg9VbiWq0VDWMBPzHFknH3tmstrxt0acrT09LBGqATTjRpsGOODz6tUdX7/dehBinxsf75U5Uw/+A==",
+      "path": "microsoft.exchange.webservices/2.2.0",
+      "hashPath": "microsoft.exchange.webservices.2.2.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/9.0.1": {
       "type": "package",
