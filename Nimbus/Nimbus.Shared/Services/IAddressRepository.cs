@@ -10,7 +10,7 @@ namespace Nimbus.Shared.Services
 {
     public interface IAddressRepository
     {
-        public DbSet<Address> addresses { get; set; }
+        public DbSet<Address> addresses { get; set;  }
         public DbSet<Route> routes { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
         public void AddStop(Address address);

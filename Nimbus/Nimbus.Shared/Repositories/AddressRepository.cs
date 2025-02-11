@@ -6,18 +6,18 @@ namespace Nimbus.Shared.Services
 {
     public class AddressRepository : IAddressRepository
     {
-        private readonly AddressRepository _addressContext;
+        private readonly DataContext _context;
         public DbSet<Address> addresses { get; set; }
         public DbSet<Route> routes { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
-        public AddressRepository(AddressRepository addressContext)
+        public AddressRepository(DataContext context)
         {
-            _addressContext = addressContext;
+            _context = context;
         }
         public void AddStop(Address address)
         {
-            addresses.Add(address);
-           // _addressContext.SaveChanges();
+            _context.Addresses.Add(address);
+           //_addressContext.addresses.SaveChanges();
         }
         public Address CreateNewAddress(int streetNumber, string streetName, string city, string state, int zip)
         {
@@ -26,11 +26,11 @@ namespace Nimbus.Shared.Services
         }
         public List<Address> GetAllAddresses()
         {
-            return _addressContext.addresses.ToList();
+            return _context.Addresses.ToList();
         }
         public Address GetAddressById(int id)
         {
-            try { return _addressContext.addresses.Find(id); }
+            try { return _context.Addresses.Find(id); }
             catch { return null; }
         }
 

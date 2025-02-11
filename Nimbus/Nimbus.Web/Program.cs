@@ -1,6 +1,8 @@
 using FluentAssertions.Common;
 using Microsoft.Extensions.DependencyInjection;
-using Nimbus.Shared;
+using Nimbus;
+using Nimbus.Shared.Logic;
+using Nimbus.Shared.Repositories;
 using Nimbus.Shared.Services;
 using Nimbus.Web.Components;
 using Nimbus.Web.Services;
@@ -15,10 +17,12 @@ builder.Services.AddRazorComponents()
 // Add device-specific services used by the Nimbus.Shared project
 //var serviceProvider = ServiceDependencyProvider.CreateServiceCollection();
 //builder.Services.AddSingleton(serviceProvider);
+//builder.Services.AddDbContext<TruckContext>();
 
-builder.Services.AddSingleton<IFormFactor, FormFactor>();
-builder.Services.AddSingleton<IAddressRepository, AddressRepository>();
-//builder.Services.AddSingleton<IAddressRepository, AddressRepository>();
+builder.Services.AddSingleton<IFormFactor, FormFactor>()
+.AddSingleton<IAddressRepository, AddressRepository>()
+.AddSingleton<ITruckRepository>()
+.AddSingleton<IRouteRepository>();
 //services.AddDbContext<TruckContext>(Options =>
 //Options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
 

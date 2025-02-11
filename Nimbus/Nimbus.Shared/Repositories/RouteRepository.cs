@@ -11,13 +11,13 @@ namespace Nimbus.Shared.Repositories
 {
     public class RouteRepository : IRouteRepository
     {
-        private readonly RouteRepository _routeContext;
+        private readonly DataContext _context;
         public DbSet<Address> addresses { get; set; }
         public DbSet<Route> routes { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
-        public RouteRepository(RouteRepository routeContext)
+        public RouteRepository(DataContext context)
         {
-            _routeContext = routeContext;
+            _context = context;
         }
         public void AddRoute(Route route)
         {
@@ -31,12 +31,11 @@ namespace Nimbus.Shared.Repositories
         }
         public List<Route> GetAllRoutes()
         {
-            return _routeContext.routes.ToList();
+            return _context.Routes.ToList();
         }
         public Route GetRouteById(int id)
         {
-            try { return _routeContext.routes.Find(id); }
-            catch { return null; }
+            return _context.Routes.Find(id); 
         }
     }
 }

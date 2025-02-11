@@ -8,13 +8,13 @@ using Nimbus.Shared.Entities;
 
 namespace Nimbus.Shared
 {
-    public class TruckContext : DbContext
+    public class DataContext : DbContext
     {
         public DbSet<TruckEntity> Trucks { get; set; }
         public DbSet<Route> Routes { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public string DbPath { get; }
-        public TruckContext()
+        public DataContext()
         {
             var folder = Environment.SpecialFolder.LocalApplicationData;
             var path = Environment.GetFolderPath(folder);
