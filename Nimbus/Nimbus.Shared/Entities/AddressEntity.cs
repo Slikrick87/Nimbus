@@ -9,6 +9,8 @@ namespace Nimbus.Shared.Entities
 {
     public class Address
     {
+        [Key]
+        public int id;
         [Required]
         public int streetNumber;
         [Required]
@@ -19,8 +21,10 @@ namespace Nimbus.Shared.Entities
         public string state;
         [Required]
         public int zipCode;
-        public bool isDelivered = false;
-        public DateTime timeDelivered;
+        //public bool? isDelivered;
+        //public DateTime? timeDelivered;
+
+        public Address() { }
 
         public Address(int streetNumber, string streetName, string city, string state, int zipCode)
         {
@@ -29,6 +33,7 @@ namespace Nimbus.Shared.Entities
             this.city = city;
             this.state = state;
             this.zipCode = zipCode;
+            //this.isDelivered = false;
         }
     }
 }

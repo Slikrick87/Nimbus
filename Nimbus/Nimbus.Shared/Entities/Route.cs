@@ -16,5 +16,7 @@ namespace Nimbus.Shared.Entities
         [ForeignKey("Truck")]
         public int truckId;
         public ICollection<Address> stops;
+
+        public Route() { }
     }
 }

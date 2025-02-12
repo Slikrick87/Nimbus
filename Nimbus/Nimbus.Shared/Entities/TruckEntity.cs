@@ -18,6 +18,9 @@ namespace Nimbus.Shared.Entities
         public int oilChange;
         [ForeignKey("Route")]
         public int routeId;
+
+        TruckEntity() { }
+
         public TruckEntity(int mileage, int tireFD, int tireRD, int tireFP, int tireRP, int oil)
         {
             //this.id = id;
