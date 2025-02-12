@@ -17,7 +17,7 @@ namespace Nimbus.Shared.Services
         public void AddStop(Address address)
         {
             _context.Addresses.Add(address);
-           //_addressContext.addresses.SaveChanges();
+           _context.SaveChanges();
         }
         public Address CreateNewAddress(int streetNumber, string streetName, string city, string state, int zip)
         {

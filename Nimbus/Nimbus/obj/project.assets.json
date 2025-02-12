@@ -530,7 +530,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -3609,6 +3609,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -4150,7 +4151,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -7229,6 +7230,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -7770,7 +7772,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -10849,6 +10851,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -11390,7 +11393,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -14469,6 +14472,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -15010,7 +15014,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -18089,6 +18093,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -18630,7 +18635,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -21709,6 +21714,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -22234,7 +22240,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -23348,6 +23354,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -23873,7 +23880,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -24987,6 +24994,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -25512,7 +25520,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -26626,6 +26634,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -27151,7 +27160,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -28265,6 +28274,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -28790,7 +28800,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -29904,6 +29914,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -30429,7 +30440,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -31543,6 +31554,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -32068,7 +32080,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -33256,6 +33268,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -33781,7 +33794,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -34886,6 +34899,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -35411,7 +35425,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -36516,6 +36530,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -37041,7 +37056,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -38143,6 +38158,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -38668,7 +38684,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -39773,6 +39789,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -40298,7 +40315,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -41400,6 +41417,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -41925,7 +41943,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -43323,6 +43341,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -43848,7 +43867,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -45121,6 +45140,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -45646,7 +45666,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -46919,6 +46939,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -47444,7 +47465,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -48714,6 +48735,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -49239,7 +49261,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -50512,6 +50534,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -51037,7 +51060,7 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/9.0.1": {
+      "Microsoft.Data.Sqlite.Core/9.0.2": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.10"
@@ -52319,6 +52342,7 @@
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.0",
+          "Microsoft.Data.Sqlite.Core": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
           "Microsoft.Exchange.WebServices": "2.2.0"
@@ -53532,10 +53556,10 @@
         "microsoft.codeanalysis.workspaces.msbuild.nuspec"
       ]
     },
-    "Microsoft.Data.Sqlite.Core/9.0.1": {
-      "sha512": "useMNbAupB8gpEp/SjanW3LvvyFG9DWPMUcXFwVNjNuFWIxNcrs5zOu9BTmNJEyfDpLlrsSBmcBv7keYVG8UhA==",
+    "Microsoft.Data.Sqlite.Core/9.0.2": {
+      "sha512": "lJbaLhjWnnPfLhZrQXPri5F0pmlJXg68yCSf5aRM3qFF8WD7dT1jnQUuBd3YvT5s1VDOH9t/6filPcTIOwZR7Q==",
       "type": "package",
-      "path": "microsoft.data.sqlite.core/9.0.1",
+      "path": "microsoft.data.sqlite.core/9.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -53547,7 +53571,7 @@
         "lib/net8.0/Microsoft.Data.Sqlite.xml",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.dll",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.xml",
-        "microsoft.data.sqlite.core.9.0.1.nupkg.sha512",
+        "microsoft.data.sqlite.core.9.0.2.nupkg.sha512",
         "microsoft.data.sqlite.core.nuspec"
       ]
     },
@@ -58418,6 +58442,7 @@
   "projectFileDependencyGroups": {
     "net9.0-android35.0": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 9.0.14",
+      "Microsoft.Data.Sqlite.Core >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
@@ -58426,6 +58451,7 @@
     ],
     "net9.0-ios18.1": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 9.0.14",
+      "Microsoft.Data.Sqlite.Core >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
@@ -58434,6 +58460,7 @@
     ],
     "net9.0-maccatalyst18.1": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 9.0.14",
+      "Microsoft.Data.Sqlite.Core >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
@@ -58442,6 +58469,7 @@
     ],
     "net9.0-windows10.0.19041": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 9.0.14",
+      "Microsoft.Data.Sqlite.Core >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
@@ -58535,6 +58563,10 @@
             "target": "Package",
             "version": "[9.0.14, )"
           },
+          "Microsoft.Data.Sqlite.Core": {
+            "target": "Package",
+            "version": "[9.0.2, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -58583,6 +58615,10 @@
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
             "version": "[9.0.14, )"
+          },
+          "Microsoft.Data.Sqlite.Core": {
+            "target": "Package",
+            "version": "[9.0.2, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -58633,6 +58669,10 @@
             "target": "Package",
             "version": "[9.0.14, )"
           },
+          "Microsoft.Data.Sqlite.Core": {
+            "target": "Package",
+            "version": "[9.0.2, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -58682,6 +58722,10 @@
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
             "version": "[9.0.14, )"
+          },
+          "Microsoft.Data.Sqlite.Core": {
+            "target": "Package",
+            "version": "[9.0.2, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

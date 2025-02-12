@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nimbus.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2f26c169264bfc96e7c41f02b5e334562f26713")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f04c254d0635efc53de4eedcbda1f186f0d2aa44")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nimbus.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nimbus.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

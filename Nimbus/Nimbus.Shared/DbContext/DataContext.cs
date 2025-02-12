@@ -17,13 +17,18 @@ namespace Nimbus.Shared
         public string DbPath { get; }
         public DataContext()
         {
+#if windows 
+            var folder = Windows.Storage.ApplicationData.Current.LocalFolder.path
+            
+            DbPath = System.IO.Path.Join(folder, "Data.db");
+#endif
             var folder = Environment.SpecialFolder.LocalApplicationData;
             var path = Environment.GetFolderPath(folder);
-            DbPath = System.IO.Path.Join(path, "trucks.db");
+            DbPath = System.IO.Path.Join(path, "Data.db");
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source={DbPath}");
+            optionsBuilder.UseSqlite($"Data Source={DbPath}");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

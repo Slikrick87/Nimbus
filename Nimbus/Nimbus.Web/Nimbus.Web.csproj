@@ -10,6 +10,7 @@
     <ProjectReference Include="..\Nimbus.Web.Client\Nimbus.Web.Client.csproj" />
     <PackageReference Include="FluentAssertions" Version="8.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="9.0.2" />
   </ItemGroup>
 
 </Project>

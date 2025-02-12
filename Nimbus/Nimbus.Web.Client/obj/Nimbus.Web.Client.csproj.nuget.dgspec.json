@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.1, )"
@@ -152,6 +156,10 @@
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[9.0.2, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",

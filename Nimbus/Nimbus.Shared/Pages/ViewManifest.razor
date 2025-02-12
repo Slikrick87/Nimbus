@@ -2,9 +2,9 @@
 @using Nimbus.Shared.Entities;
 @inject IAddressRepository AddressRepository;
 @page "/manifest"
-@code {
-    private int stopCounter = 0;
-    public List<Address> allStops = new List<Address>();
+@* @code {
+    // private int stopCounter = 0;
+    // public List<Address> allStops = new List<Address>();
 
     protected override void OnInitialized()
     {
@@ -15,7 +15,7 @@
         allStops = AddressRepository.GetAllAddresses();
         stopCounter = 0;
     }
-}
+} *@
 <h3>Manifest</h3>
 <ul>@foreach (Address stop in allStops)
     {
@@ -30,7 +30,7 @@
     
 </ul>
 <button class="btn btn-primary" @onclick="GetManifest">Get Manifest</button>
-@* @code {
+@code {
     private int stopCounter = 0;
     public List<Address> allStops = new List<Address>();
 
@@ -41,5 +41,6 @@
     protected override void OnInitialized()
     {
         GetManifest();
-    } *@
+    }
 
+}

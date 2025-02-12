@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7kY3ROY0YeI=",
+  "dgSpecHash": "BiO9cfWHXMI=",
   "success": true,
   "projectFilePath": "C:\\CodeYou\\SoftwareDevModule\\NimbusApp\\Nimbus2\\Nimbus\\Nimbus\\Nimbus.Web.Client\\Nimbus.Web.Client.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,7 @@
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.aspnetcore.components.web\\9.0.0\\microsoft.aspnetcore.components.web.9.0.0.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\9.0.0\\microsoft.aspnetcore.components.webassembly.9.0.0.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.aspnetcore.metadata\\9.0.0\\microsoft.aspnetcore.metadata.9.0.0.nupkg.sha512",
-    "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.1\\microsoft.data.sqlite.core.9.0.1.nupkg.sha512",
+    "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.2\\microsoft.data.sqlite.core.9.0.2.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.1\\microsoft.entityframeworkcore.9.0.1.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.1\\microsoft.entityframeworkcore.abstractions.9.0.1.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.1\\microsoft.entityframeworkcore.analyzers.9.0.1.nupkg.sha512",
