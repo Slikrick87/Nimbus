@@ -10,12 +10,13 @@ namespace Nimbus.Shared.Services
 {
     public interface IRouteRepository
     {
-        public DbSet<Route> routes { get; set; }
+        public DbSet<RouteEntity> routes { get; set; }
         public DbSet<Address> addresses { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
-        public void AddRoute(Route route);
-        public Route CreateNewRoute(int streetNumber, string streetName, string city, string state, int zip);
-        public List<Route> GetAllRoutes();
-        public Route GetRouteById(int id);
+        public void AddRoute(RouteEntity route);
+        public RouteEntity CreateNewRoute();
+        public List<RouteEntity> GetAllRoutes();
+        public RouteEntity GetRouteById(int id);
+        public List<Address> GetStops(int routeId);
     }
 }

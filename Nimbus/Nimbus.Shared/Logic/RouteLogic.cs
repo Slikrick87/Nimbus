@@ -10,11 +10,11 @@ namespace Nimbus.Shared.Logic
 {
     public class RouteLogic
     {
-        public Route CreateNewRoute(int truckId, ICollection<Address> stops)
+        public RouteEntity CreateNewRoute(int truckId, ICollection<Address> stops)
         {
-            return new Route
+            return new RouteEntity
             {
-                truckId = truckId,
+                //truckId = truckId,
                 stops = stops
             };
         }

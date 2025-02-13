@@ -3,9 +3,12 @@ using Microsoft.Extensions.Logging;
 using Nimbus.Services;
 using Nimbus.Shared;
 using Nimbus.Shared.Logic;
+using Nimbus.Shared.Repositories;
+
 
 //using Nimbus.Web.Services;
 using Nimbus.Shared.Services;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Nimbus
 {
@@ -24,12 +27,13 @@ namespace Nimbus
 
             // Add device-specific services used by the Nimbus.Shared project
             builder.Services.AddDbContext<DataContext>();
-            
+
             builder.Services.AddSingleton<IFormFactor, FormFactor>()
             .AddSingleton<IAddressRepository, AddressRepository>()
+            .AddSingleton<IRouteRepository, RouteRepository>()
             .AddSingleton<ITruckRepository, TruckRepository>()
             .AddMauiBlazorWebView();
-
+            
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();

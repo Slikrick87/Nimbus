@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 
 namespace Nimbus.Shared.Entities
 {
-    public class Route
+    public class RouteEntity
     {
         [Key] public int Id { get; set; }
-        [Required]
-        [ForeignKey("Truck")]
-        public int truckId;
+        public string? nickName;
+        //[Required]
+        //[ForeignKey("Truck")]
+        //public TruckEntity? truckId;
         public ICollection<Address> stops;
 
-        public Route() { }
+        public RouteEntity() { }
     }
 }

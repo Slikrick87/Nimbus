@@ -8,7 +8,7 @@ namespace Nimbus.Shared.Services
     {
         private readonly DataContext _context;
         public DbSet<Address> addresses { get; set; }
-        public DbSet<Route> routes { get; set; }
+        public DbSet<RouteEntity> routes { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
         public AddressRepository(DataContext context)
         {
@@ -33,6 +33,10 @@ namespace Nimbus.Shared.Services
             try { return _context.Addresses.Find(id); }
             catch { return null; }
         }
+        //public List<Address> GetStops(int id)
+        //{
+        //    return _context.Addresses
+        //}
 
         }
 }

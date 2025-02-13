@@ -13,29 +13,40 @@ namespace Nimbus.Shared.Repositories
     {
         private readonly DataContext _context;
         public DbSet<Address> addresses { get; set; }
-        public DbSet<Route> routes { get; set; }
+        public DbSet<RouteEntity> routes { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
         public RouteRepository(DataContext context)
         {
             _context = context;
         }
-        public void AddRoute(Route route)
+        public void AddRoute(RouteEntity route)
         {
 
-            routes.Add(route);
+            _context.Routes.Add(route);
+            _context.SaveChanges();
         }
-        public Route CreateNewRoute(int streetNumber, string streetName, string city, string state, int zip)
+        public RouteEntity CreateNewRoute()
         {
-            Route route = new Route();
+            RouteEntity route = new RouteEntity();
             return route;
         }
-        public List<Route> GetAllRoutes()
+        public List<RouteEntity> GetAllRoutes()
         {
             return _context.Routes.ToList();
         }
-        public Route GetRouteById(int id)
+        public RouteEntity GetRouteById(int id)
         {
             return _context.Routes.Find(id); 
+        }
+        public Address AddStop(Address address)
+        {
+            _context.Addresses.Add(address);
+            _context.SaveChanges();
+            return address;
+        }
+        public List<Address> GetStops(int routeId)
+        {
+            return _context.Addresses.Where(a => a.id == routeId).ToList();
         }
     }
 }

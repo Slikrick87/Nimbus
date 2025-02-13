@@ -12,7 +12,7 @@ namespace Nimbus.Shared
     public class DataContext : DbContext
     {
         public DbSet<TruckEntity> Trucks { get; set; }
-        public DbSet<Route> Routes { get; set; }
+        public DbSet<RouteEntity> Routes { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public string DbPath { get; }
         public DataContext()
@@ -51,24 +51,24 @@ namespace Nimbus.Shared
             modelBuilder.Entity<TruckEntity>()
                 .Property(t => t.tireRP)
                 .IsRequired();
-            modelBuilder.Entity<TruckEntity>()
-                .HasOne<Route>()
-                .WithOne()
-                .HasForeignKey<TruckEntity>(t => t.routeId);
+            //modelBuilder.Entity<TruckEntity>()
+            //    .HasOne<RouteEntity>()
+            //    .WithOne()
+            //    .HasForeignKey<TruckEntity>(t => t.routeId);
 
             modelBuilder.Entity<TruckEntity>()
                 .ToTable("Trucks");
 
 
-            modelBuilder.Entity<Route>()
+            modelBuilder.Entity<RouteEntity>()
                 .HasKey(r => r.Id);
-            modelBuilder.Entity<Route>()
-                .HasOne<TruckEntity>()
-                .WithOne()
-                .HasForeignKey<Route>(r => r.truckId);
-            modelBuilder.Entity<Route>()
+            //modelBuilder.Entity<RouteEntity>()
+            //    .HasOne<TruckEntity>()
+            //    .WithOne()
+            //    .HasForeignKey<RouteEntity>(r => r.truckId);
+            modelBuilder.Entity<RouteEntity>()
                 .HasMany(r => r.stops);
-            modelBuilder.Entity<Route>()
+            modelBuilder.Entity<RouteEntity>()
                 .ToTable("Routes");
 
             modelBuilder.Entity<Address>()

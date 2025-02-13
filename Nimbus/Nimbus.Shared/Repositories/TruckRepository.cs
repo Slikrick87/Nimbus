@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Nimbus.Shared.Entities;
 using Nimbus.Shared.Services;
+using Nimbus.Shared.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,8 +14,9 @@ namespace Nimbus.Shared.Logic
     public class TruckRepository : ITruckRepository
     {
         private readonly DataContext _context;
+        //public TruckEntity currentTruck;
         public DbSet<Address> addresses { get; set; }
-        public DbSet<Route> routes { get; set; }
+        public DbSet<RouteEntity> routes { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
         public TruckRepository(DataContext context)
         {
@@ -24,7 +26,12 @@ namespace Nimbus.Shared.Logic
         {
 
             _context.Trucks.Add(truck);
+            _context.SaveChanges();
         }
+        //public void SetCurrentTruck(TruckEntity truck)
+        //{
+        //    currentTruck = truck;
+        //}
         public TruckEntity CreateNewTruck(int mileage, int tireFD, int tireRD, int tireFP, int tireRP, int oil)
         {
             TruckEntity truck = new TruckEntity(mileage, tireFD, tireRD, tireFP, tireRP, oil);
@@ -36,8 +43,19 @@ namespace Nimbus.Shared.Logic
         }
         public TruckEntity GetTruckById(int id)
         {
-            try { return _context.Trucks.Find(id); }
-            catch { return null; }
+            return _context.Trucks.Find(id); 
+        }
+        public void AdjustMileage(int id, int mileage)
+        {
+            TruckEntity truck = GetTruckById(id);
+            int difference = mileage - truck.mileage;
+            truck.tireFD += difference;
+            truck.tireRD += difference;
+            truck.tireFP += difference;
+            truck.tireRP += difference;
+            truck.oilChange += difference;
+            truck.mileage = mileage;
+            _context.SaveChanges();
         }
     }
 }

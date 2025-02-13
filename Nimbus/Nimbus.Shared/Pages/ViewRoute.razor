@@ -1,0 +1,28 @@
+﻿@using Nimbus.Shared.Services;
+@using Nimbus.Shared.Entities;
+@inject IRouteRepository RouteRepository;
+@inject IAddressRepository AddressRepository;
+@page "/viewRoute"
+
+<h3>View Route</h3>
+<input type="number" placeholder="Enter Route ID" @bind="routeId" />
+<button class="btn btn-primary" @onclick="GetRoute">Get Route</button>
+<ol>
+    @foreach (Address stop in allStops)
+    {
+        <li>@stop.streetNumber @stop.streetName, @stop.city, @stop.state @stop.zipCode</li>
+    }
+</ol>
+
+
+@code {
+    public int routeId;
+    //RouteEntity route;
+    List<Address> allStops = new List<Address>();
+    public void GetRoute()
+    {
+        //route = RouteRepository.GetRouteById(routeId);
+        allStops = RouteRepository.GetStops(routeId);
+    }
+
+}

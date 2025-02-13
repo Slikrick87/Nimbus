@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nimbus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f04c254d0635efc53de4eedcbda1f186f0d2aa44")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0439a1a71fed3a199212eca342b845e38e542bc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nimbus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nimbus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

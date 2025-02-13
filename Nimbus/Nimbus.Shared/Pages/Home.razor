@@ -1,16 +1,48 @@
 ﻿@page "/"
-@using Nimbus.Shared.Services
+@using Nimbus.Shared.Services;
+@using Nimbus.Shared.Entities;
+@using Nimbus.Shared.Repositories;
+@inject ITruckRepository TruckRepository;
+@inject IRouteRepository RouteRepository;
 @inject IFormFactor FormFactor
 
 <PageTitle>Home</PageTitle>
 
+
 <h1>Hello, Driver!</h1>
 
-<form method="get">
+<form method="post">
+    <ul>
+        @foreach (TruckEntity truck in TruckRepository.GetAllTrucks())
+        {
+            <li>Truck Id: @truck.id Mileage: @truck.mileage</li>
+            <inputtype = "radio" id="@truck.id" value="@truck.id" />
+            @if (checked(true))
+           { truckid = truck.id; }
+            @* button color="Primary Color" class="btn btn-primary" @onclick="truckid = truck.id" @onclick="SelectTruck">Select</button> *@
 
-    <input type="checkbox" />
+        })
+    </ul>
 </form>
+
+<button color="Primary Color" class="btn btn-primary" @onclick="SelectTruck">Select</button>
+
+<div class="nav-item px-3">
+    <NavLink class="nav-link" href="selectRoute">
+        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Choose Route
+    </NavLink>
+</div>
 @code {
+    
     private string factor => FormFactor.GetFormFactor();
     private string platform => FormFactor.GetPlatform();
+    public TruckEntity truck;
+    public int truckid;
+    public void SelectTruck()
+    {
+        truck = TruckRepository.GetTruckById(truckid);
+    }
+
+    // HttpContext.Session.SetString("truckid", truckid.ToString());
+    // Response.Redirect("/selectRoute");
 }
