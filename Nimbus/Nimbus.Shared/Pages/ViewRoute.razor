@@ -1,19 +1,31 @@
 ﻿@using Nimbus.Shared.Services;
 @using Nimbus.Shared.Entities;
+@using Nimbus.Shared.Repositories;
+@inject TempService TempService;
 @inject IRouteRepository RouteRepository;
 @inject IAddressRepository AddressRepository;
 @page "/viewRoute"
 
 <h3>View Route</h3>
-<input type="number" placeholder="Enter Route ID" @bind="routeId" />
-<button class="btn btn-primary" @onclick="GetRoute">Get Route</button>
+@try{
 <ol>
-    @foreach (Address stop in allStops)
+    @foreach (Address stop in TempService.currentStops)
     {
         <li>@stop.streetNumber @stop.streetName, @stop.city, @stop.state @stop.zipCode</li>
     }
 </ol>
+}
+catch
+{
+    <h1> No Stops On Current Route </h1>
+    <div class="nav-item px-3">
+    <NavLink class="nav-link" href="addStop">
+        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Add Stops To Current Route
+    </NavLink>
+</div>
+}
 
+}
 
 @code {
     public int routeId;
@@ -21,6 +33,7 @@
     List<Address> allStops = new List<Address>();
     public void GetRoute()
     {
+        
         //route = RouteRepository.GetRouteById(routeId);
         allStops = RouteRepository.GetStops(routeId);
     }

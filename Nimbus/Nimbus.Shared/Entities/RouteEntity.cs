@@ -13,9 +13,9 @@ namespace Nimbus.Shared.Entities
     {
         [Key] public int Id { get; set; }
         public string? nickName;
-        //[Required]
-        //[ForeignKey("Truck")]
-        //public TruckEntity? truckId;
+        [Required]
+        [ForeignKey("Truck")]
+        public TruckEntity? truckId;
         public ICollection<Address> stops;
 
         public RouteEntity() { }

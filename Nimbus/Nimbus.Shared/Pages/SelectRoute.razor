@@ -1,7 +1,9 @@
 ﻿@using Nimbus.Shared.Services;
 @using Nimbus.Shared.Entities;
+@using Nimbus.Shared.Repositories;
 @inject IRouteRepository RouteRepository;
 @inject ITruckRepository TruckRepository;
+@inject TempService TempService;
 @page "/selectRoute"
 
 <h3>Select Route</h3>
@@ -21,14 +23,14 @@
         <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Add New Stops
     </NavLink>
 </div>
-
+<h3>Current Route: route.id Name: TempService.selectedRoute</h3>
 @code {
-    public RouteEntity route;
-    public int routeid;
-    public void ChooseRoute()
+    public RouteEntity route = null;
+    public int routeid = 0;
+        public void ChooseRoute()
     {
-        routeid = route.Id;
         route = RouteRepository.GetRouteById(routeid);
+        TempService.selectedRoute = route;
     }
 
 }

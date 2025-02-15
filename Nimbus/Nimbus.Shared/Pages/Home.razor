@@ -4,43 +4,68 @@
 @using Nimbus.Shared.Repositories;
 @inject ITruckRepository TruckRepository;
 @inject IRouteRepository RouteRepository;
+@inject TempService TempService;
 @inject IFormFactor FormFactor
 
 <PageTitle>Home</PageTitle>
+@if (truck != null && route != null)
+{
+    <h1>Selected Truck: @truck.id</h1>
+<h1>Selected Route: @route.Id, @route.nickName</h1>
+}
+else
+{
+    <h1>Please Select Truck and Route</h1>
+}
 
-
-<h1>Hello, Driver!</h1>
-
-<form method="post">
-    <ul>
-        @foreach (TruckEntity truck in TruckRepository.GetAllTrucks())
-        {
-            <li>Truck Id: @truck.id Mileage: @truck.mileage</li>
-            <inputtype = "radio" id="@truck.id" value="@truck.id" />
-            @if (checked(true))
-           { truckid = truck.id; }
-            @* button color="Primary Color" class="btn btn-primary" @onclick="truckid = truck.id" @onclick="SelectTruck">Select</button> *@
-
-        })
-    </ul>
-</form>
-
-<button color="Primary Color" class="btn btn-primary" @onclick="SelectTruck">Select</button>
+<div class="nav-item px-3">
+    <NavLink class="nav-link" href="selectTruck">
+        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Select Truck
+    </NavLink>
+</div>
 
 <div class="nav-item px-3">
     <NavLink class="nav-link" href="selectRoute">
-        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Choose Route
+        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Select Route
     </NavLink>
 </div>
 @code {
-    
     private string factor => FormFactor.GetFormFactor();
     private string platform => FormFactor.GetPlatform();
+    public List<RouteEntity> routes;
+    public RouteEntity route;
     public TruckEntity truck;
-    public int truckid;
-    public void SelectTruck()
+    public int routeid;
+    private string routeSelection;
+    // private async Task SaveValue()
+    // {
+    //     await SecureStorage.Default.SetItemAsync("routeSelection", routeSelection);
+    // }
+    // public void SelectRoute()
+    // {
+    //     route = RouteRepository.GetRouteById(routeid);
+    // }
+    public void OnCheckboxChange(ChangeEventArgs e, RouteEntity route)
     {
-        truck = TruckRepository.GetTruckById(truckid);
+        if ((bool)e.Value)
+        {
+            TempService.selectedRoute = route;
+        }
+        else
+        {
+            TempService.selectedRoute = null;
+        }
+    }
+    protected override void OnInitialized()
+    {
+        try
+        {
+            truck = TempService.currentTruck;
+            route = TempService.selectedRoute;
+        }
+        catch
+        {
+        }
     }
 
     // HttpContext.Session.SetString("truckid", truckid.ToString());
