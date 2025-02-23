@@ -34,6 +34,7 @@ namespace Nimbus
             .AddSingleton<ITruckRepository, TruckRepository>()
             .AddSingleton<TempService>()
             .AddMauiBlazorWebView();
+
             
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();

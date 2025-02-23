@@ -1,11 +1,8 @@
-0:00:00 Browser1 Insert active Tab1 at 0
-0:00:00 Tab1 StartNav1 #auto_toplevel
-0:00:00 Tab1 FinishNav1
-0:00:00 Tab1 PageLoad
-0:00:00 Tab1 StartNav2 #typed
-0:00:00 Tab1 FinishNav2
-0:00:00 Tab1 PageLoad
-0:02:01 Microsoft.Shutdown.OnWindowClosing
+0:00:30 Tab1 FinishNav9
+0:00:30 Tab1 StartNav10 #renderer-user #link
+0:00:30 Tab1 FinishNav10
+0:00:30 Tab1 PageLoad
+0:00:34 Microsoft.Shutdown.OnWindowClosing
 0:00:00 Startup
 0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
 0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
@@ -18,18 +15,7 @@
 0:00:00 Tab1 StartNav2 #typed
 0:00:00 Tab1 FinishNav2
 0:00:00 Tab1 PageLoad
-0:01:28 Tab1 StartNav3 #renderer-user #link
-0:01:28 Tab1 FinishNav3
-0:01:56 Tab1 StartNav4 #renderer-user #link
-0:01:56 Tab1 FinishNav4
-0:01:58 Tab1 StartNav5 #renderer-user #link
-0:01:58 Tab1 FinishNav5
-0:02:03 Widget Closed: PopupBaseView
-0:02:03 Tab1 StartNav6 #renderer-user #link
-0:02:03 Tab1 FinishNav6
-0:02:07 Tab1 StartNav7 #renderer-user #link
-0:02:07 Tab1 FinishNav7
-0:03:55 Microsoft.Shutdown.OnWindowClosing
+0:00:55 Microsoft.Shutdown.OnWindowClosing
 0:00:00 Startup
 0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
 0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
@@ -44,25 +30,11 @@
 0:00:00 Tab1 PageLoad
 0:00:03 Tab1 StartNav3 #renderer-user #link
 0:00:03 Tab1 FinishNav3
-0:00:11 Tab1 StartNav4 #renderer-user #link
-0:00:11 Tab1 FinishNav4
-0:00:12 Tab1 StartNav5 #renderer-user #link
-0:00:12 Tab1 FinishNav5
-0:00:13 Tab1 StartNav6 #renderer-user #form_submit
-0:00:13 Tab1 FinishNav6
-0:00:13 Tab1 PageLoad
-0:00:16 Tab1 StartNav7 #renderer-user #link
-0:00:16 Tab1 FinishNav7
-0:00:27 Tab1 StartNav8 #renderer-user #link
-0:00:27 Tab1 FinishNav8
-0:00:28 Tab1 StartNav9 #renderer-user #link
-0:00:28 Tab1 FinishNav9
-0:00:29 Tab1 StartNav10 #renderer-user #form_submit
-0:00:29 Tab1 FinishNav10
-0:00:29 Tab1 PageLoad
-0:00:34 Tab1 StartNav11 #renderer-user #link
-0:00:34 Tab1 FinishNav11
-0:04:19 Microsoft.Shutdown.OnWindowClosing
+0:00:07 Tab1 StartNav4 #renderer-user #link
+0:00:07 Tab1 FinishNav4
+0:00:08 Tab1 StartNav5 #renderer-user #link
+0:00:08 Tab1 FinishNav5
+0:03:20 Microsoft.Shutdown.OnWindowClosing
 0:00:00 Startup
 0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
 0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
@@ -75,74 +47,114 @@
 0:00:00 Tab1 StartNav2 #typed
 0:00:00 Tab1 FinishNav2
 0:00:00 Tab1 PageLoad
-0:00:03 Tab1 StartNav3 #renderer-user #link
-0:00:03 Tab1 FinishNav3
-0:00:06 Tab1 StartNav4 #renderer-user #form_submit
-0:00:06 Tab1 FinishNav4
-0:00:06 Tab1 PageLoad
-0:00:07 Tab1 StartNav5 #renderer-user #form_submit
-0:00:07 Tab1 FinishNav5
-0:00:07 Tab1 PageLoad
-0:00:09 Tab1 StartNav6 #renderer-user #form_submit
-0:00:09 Tab1 FinishNav6
+0:01:49 Tab1 StartNav3 #renderer-user #link
+0:01:49 Tab1 FinishNav3
+0:01:51 Widget Closed: PopupBaseView
+0:01:51 Widget Closed: PopupBaseView
+0:01:51 Widget Closed: PopupBaseView
+0:01:52 Widget Closed: PopupBaseView
+0:01:52 Widget Closed: PopupBaseView
+0:01:52 Widget Closed: PopupBaseView
+0:01:52 Widget Closed: PopupBaseView
+0:01:52 Widget Closed: PopupBaseView
+0:01:53 Widget Closed: PopupBaseView
+0:01:53 Widget Closed: PopupBaseView
+0:01:54 Widget Closed: PopupBaseView
+0:01:58 Widget Closed: PopupBaseView
+0:01:59 Widget Closed: PopupBaseView
+0:01:59 Widget Closed: PopupBaseView
+0:01:59 Widget Closed: PopupBaseView
+0:01:59 Widget Closed: PopupBaseView
+0:01:59 Widget Closed: PopupBaseView
+0:02:00 Widget Closed: PopupBaseView
+0:02:00 Widget Closed: PopupBaseView
+0:02:00 Widget Closed: PopupBaseView
+0:02:00 Widget Closed: PopupBaseView
+0:02:03 Tab1 StartNav4 #renderer-user #link
+0:02:03 Tab1 FinishNav4
+0:02:22 Tab1 StartNav5 #renderer-user #link
+0:02:22 Tab1 FinishNav5
+0:03:23 Microsoft.Shutdown.OnWindowClosing
+0:00:00 Startup
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
+0:00:00 Microsoft.NewBrowser_Popup
+0:00:00 Microsoft.BrowserList.AddBrowser
+0:00:00 Browser1 Insert active Tab1 at 0
+0:00:00 Tab1 StartNav1 #auto_toplevel
+0:00:00 Tab1 FinishNav1
+0:00:00 Tab1 PageLoad
+0:00:00 Tab1 StartNav2 #typed
+0:00:00 Tab1 FinishNav2
+0:00:00 Tab1 PageLoad
+0:00:02 Tab1 StartNav3 #renderer-user #link
+0:00:02 Tab1 FinishNav3
+0:00:08 Tab1 StartNav4 #renderer-user #link
+0:00:08 Tab1 FinishNav4
+0:00:09 Tab1 StartNav5 #renderer-user #link
+0:00:09 Tab1 FinishNav5
+0:00:11 Tab1 StartNav6 #renderer-user #form_submit
+0:00:11 Tab1 FinishNav6
+0:00:11 Tab1 PageLoad
+0:00:13 Tab1 StartNav7 #renderer-user #link
+0:00:13 Tab1 FinishNav7
+0:00:15 Tab1 StartNav8 #renderer-user #link
+0:00:15 Tab1 FinishNav8
+0:00:16 Tab1 StartNav9 #renderer-user #form_submit
+0:00:16 Tab1 FinishNav9
+0:00:16 Tab1 PageLoad
+0:00:19 Tab1 StartNav10 #renderer-user #link
+0:00:19 Tab1 FinishNav10
+0:00:36 Tab1 StartNav11 #renderer-user #link
+0:00:36 Tab1 FinishNav11
+0:00:39 Tab1 StartNav12 #renderer-user #link
+0:00:39 Tab1 FinishNav12
+0:00:46 Microsoft.Shutdown.OnWindowClosing
+0:00:00 Startup
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
+0:00:00 Microsoft.NewBrowser_Popup
+0:00:00 Microsoft.BrowserList.AddBrowser
+0:00:00 Browser1 Insert active Tab1 at 0
+0:00:00 Tab1 StartNav1 #auto_toplevel
+0:00:00 Tab1 FinishNav1
+0:00:00 Tab1 PageLoad
+0:00:00 Tab1 StartNav2 #typed
+0:00:00 Tab1 FinishNav2
+0:00:00 Tab1 PageLoad
+0:00:02 Tab1 StartNav3 #renderer-user #link
+0:00:02 Tab1 FinishNav3
+0:00:05 Tab1 StartNav4 #renderer-user #form_submit
+0:00:05 Tab1 FinishNav4
+0:00:05 Tab1 PageLoad
+0:00:06 Tab1 StartNav5 #renderer-user #link
+0:00:06 Tab1 FinishNav5
+0:00:08 Tab1 StartNav6 #renderer-user #link
+0:00:08 Tab1 FinishNav6
+0:00:09 Tab1 StartNav7 #renderer-user #form_submit
+0:00:09 Tab1 FinishNav7
 0:00:09 Tab1 PageLoad
-0:00:23 Tab1 StartNav7 #renderer-user #link
-0:00:23 Tab1 FinishNav7
-0:00:23 Tab1 StartNav8 #renderer-user #link
-0:00:23 Tab1 FinishNav8
-0:00:23 Tab1 StartNav9 #renderer-user #link
-0:00:23 Tab1 FinishNav9
-0:00:23 Tab1 PageLoad
-0:00:24 Microsoft.Shutdown.OnWindowClosing
-0:00:00 Startup
-0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
-0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
-0:00:00 Microsoft.NewBrowser_Popup
-0:00:00 Microsoft.BrowserList.AddBrowser
-0:00:00 Browser1 Insert active Tab1 at 0
-0:00:00 Tab1 StartNav1 #auto_toplevel
-0:00:00 Tab1 FinishNav1
-0:00:00 Tab1 PageLoad
-0:00:00 Tab1 StartNav2 #typed
-0:00:00 Tab1 FinishNav2
-0:00:00 Tab1 PageLoad
-0:00:14 Microsoft.Shutdown.OnWindowClosing
-0:00:00 Startup
-0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
-0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
-0:00:00 Microsoft.NewBrowser_Popup
-0:00:00 Microsoft.BrowserList.AddBrowser
-0:00:00 Browser1 Insert active Tab1 at 0
-0:00:00 Tab1 StartNav1 #auto_toplevel
-0:00:00 Tab1 FinishNav1
-0:00:00 Tab1 PageLoad
-0:00:00 Tab1 StartNav2 #typed
-0:00:00 Tab1 FinishNav2
-0:00:00 Tab1 PageLoad
-0:01:00 Microsoft.Shutdown.OnWindowClosing
-0:00:00 Startup
-0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
-0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
-0:00:00 Microsoft.NewBrowser_Popup
-0:00:00 Microsoft.BrowserList.AddBrowser
-0:00:00 Browser1 Insert active Tab1 at 0
-0:00:00 Tab1 StartNav1 #auto_toplevel
-0:00:00 Tab1 FinishNav1
-0:00:00 Tab1 PageLoad
-0:00:00 Tab1 StartNav2 #typed
-0:00:00 Tab1 FinishNav2
-0:00:00 Tab1 PageLoad
-0:00:16 Microsoft.Shutdown.OnWindowClosing
-0:00:00 Startup
-0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
-0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
-0:00:00 Microsoft.NewBrowser_Popup
-0:00:00 Microsoft.BrowserList.AddBrowser
-0:00:00 Browser1 Insert active Tab1 at 0
-0:00:00 Tab1 StartNav1 #auto_toplevel
-0:00:00 Tab1 FinishNav1
-0:00:00 Tab1 PageLoad
-0:00:00 Tab1 StartNav2 #typed
-0:00:00 Tab1 FinishNav2
-0:00:00 Tab1 PageLoad
-11:38:14 Tab1 RenderProcessGone
+0:01:30 Tab1 StartNav8 #renderer-user #form_submit
+0:01:30 Tab1 FinishNav8
+0:01:30 Tab1 PageLoad
+0:01:31 Tab1 StartNav9 #renderer-user #form_submit
+0:01:31 Tab1 FinishNav9
+0:01:31 Tab1 PageLoad
+0:01:31 Tab1 StartNav10 #renderer-user #form_submit
+0:01:31 Tab1 FinishNav10
+0:01:31 Tab1 PageLoad
+0:15:51 Memory Pressure: Moderate
+0:16:01 Memory Pressure: Critical
+0:16:06 Memory Pressure: Moderate
+0:16:16 Memory Pressure: Moderate
+0:17:36 Memory Pressure: Moderate
+0:17:46 Memory Pressure: Moderate
+0:17:56 Memory Pressure: Moderate
+0:18:06 Memory Pressure: Moderate
+0:18:16 Memory Pressure: Moderate
+0:57:56 Memory Pressure: Moderate
+0:58:14 Tab1 StartNav11 #renderer-user #form_submit
+0:58:14 Tab1 FinishNav11
+0:58:14 Tab1 PageLoad
+0:58:32 Memory Pressure: Moderate
+0:58:43 Microsoft.Shutdown.OnWindowClosing

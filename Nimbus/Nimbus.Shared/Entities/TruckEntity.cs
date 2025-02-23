@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -9,15 +10,16 @@ namespace Nimbus.Shared.Entities
 {
     public class TruckEntity
     {
-        public int id;
+        [Key] public int id;
         public int mileage;
         public int tireFD;
         public int tireRD;
         public int tireFP;
         public int tireRP;
         public int oilChange;
-        //[ForeignKey("Route")]
-        //public RouteEntity? routeId = null;
+        [ForeignKey("Route")]
+        public int? routeId;
+        public RouteEntity? route;
 
         TruckEntity() { }
 

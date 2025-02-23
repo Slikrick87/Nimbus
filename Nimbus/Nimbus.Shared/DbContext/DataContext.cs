@@ -51,10 +51,11 @@ namespace Nimbus.Shared
             modelBuilder.Entity<TruckEntity>()
                 .Property(t => t.tireRP)
                 .IsRequired();
-            //modelBuilder.Entity<TruckEntity>()
-            //    .HasOne<RouteEntity>()
-            //    .WithOne()
-            //    .HasForeignKey<TruckEntity>(t => t.routeId);
+            modelBuilder.Entity<TruckEntity>()
+                .HasOne(t => t.route)
+                .WithOne()
+                .HasForeignKey<TruckEntity>(t => t.routeId)
+                .IsRequired(false);
 
             modelBuilder.Entity<TruckEntity>()
                 .ToTable("Trucks");
@@ -62,14 +63,29 @@ namespace Nimbus.Shared
 
             modelBuilder.Entity<RouteEntity>()
                 .HasKey(r => r.Id);
-            //modelBuilder.Entity<RouteEntity>()
-            //    .HasOne<TruckEntity>()
-            //    .WithOne()
-            //    .HasForeignKey<RouteEntity>(r => r.truckId);
+            modelBuilder.Entity<RouteEntity>()
+                .Property(r => r.nickName)
+                .IsRequired(false);
             modelBuilder.Entity<RouteEntity>()
                 .HasMany(r => r.stops);
             modelBuilder.Entity<RouteEntity>()
                 .ToTable("Routes");
+            modelBuilder.Entity<RouteEntity>()
+                .HasOne(r => r.truck)
+                .WithOne()
+                .HasForeignKey<RouteEntity>(r => r.truckId)
+                .IsRequired(false);
+
+
+            //Hey update relationships like this ^^^^^^
+
+
+
+
+            //modelBuilder.Entity<RouteEntity>()
+            //    .HasMany(r => r.stops);
+            //modelBuilder.Entity<RouteEntity>()
+            //    .ToTable("Routes");
 
             modelBuilder.Entity<Address>()
                 .HasKey(a => a.id);
@@ -87,6 +103,11 @@ namespace Nimbus.Shared
                 .HasColumnName("Zip Code");
             modelBuilder.Entity<Address>()
                 .ToTable("Addresses");
+            modelBuilder.Entity<Address>()
+                .HasOne(a => a.route)
+                .WithOne()
+                .HasForeignKey<Address>(a => a.routeId)
+                .IsRequired(false);
             //modelBuilder.Entity<Address>(entity =>
             //{
             //    entity.HasKey(e => new { e.streetNumber, e.streetName, e.city, e.state, e.zipCode });

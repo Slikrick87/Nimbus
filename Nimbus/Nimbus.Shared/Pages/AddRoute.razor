@@ -29,8 +29,7 @@
     public RouteEntity route;
     public void AddNewRoute()
     {
-        route = RouteRepository.CreateNewRoute();
-        route.nickName = nickName;
+        route = new RouteEntity(nickName);
         RouteRepository.AddRoute(route);
     }
 }

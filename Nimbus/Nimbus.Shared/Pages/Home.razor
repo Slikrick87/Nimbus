@@ -30,6 +30,26 @@ else
     </NavLink>
 </div>
 @code {
+
+    //Can move @code to a partial class with same name such as Home.cs
+    //look up blazor validation form
+    //<tbody>simple html table</tbody>
+    //can use @page "/DisplayTruck/{TruckId}" to set the route and use another to same page without {TruckId}
+    //@bind-Value="@truckid" to bind the value to the property will chhange dynamically even in loops and if statements
+    //Input select for dropdowns InputCheckBox for checkboxes
+    //check<EditForm Model="truck" OnValidSubmit="HandleValidSubmit">
+    //add modal for creating and adding addresses to routes
+    //lock buttons after onclick when using ASYNC so you don't have multiple calls
+    //finish tests 
+    //Check Datacontext and update relationships
+    //IAsyncEnumerable for large data sets
+    //CancellationTokenSource
+    //change header footer and layout in layout.cshtml
+    //make new layout page for mao display
+    //[Required(ErrorMessage = "Please enter a name.")])]
+    //Add for calling error list display on creation pages and where according
+
+
     private string factor => FormFactor.GetFormFactor();
     private string platform => FormFactor.GetPlatform();
     public List<RouteEntity> routes;

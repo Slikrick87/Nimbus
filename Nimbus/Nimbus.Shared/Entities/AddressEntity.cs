@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,9 @@ namespace Nimbus.Shared.Entities
         public string state;
         [Required]
         public int zipCode;
+        [ForeignKey("Route")]
+        public int? routeId;
+        public RouteEntity? route;
         //public bool? isDelivered;
         //public DateTime? timeDelivered;
 

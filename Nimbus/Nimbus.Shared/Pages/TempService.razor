@@ -1,0 +1,20 @@
+﻿@* @using Nimbus.Shared.Repositories;
+@using Nimbus.Shared.Entities;
+@inject TempService tempService;
+<h3>TempService</h3>
+
+@if (tempService.selectedRoute != null)
+{
+    <h2>Selected Route:</h2>
+    <p>ID: @tempService.selectedRoute.Id</p>
+    <p>Nickname: @tempService.selectedRoute.nickName</p>
+    <p>Truck ID: @tempService.selectedRoute.truckId</p>
+    <p>Number of Stops: @(tempService.selectedRoute.stops?.Count ?? 0)</p>
+}
+else
+{
+    <h2>No route selected</h2>
+}
+@code {
+
+} *@

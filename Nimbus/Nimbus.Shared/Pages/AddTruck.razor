@@ -16,19 +16,29 @@
             @* <label for="nickName">Nickname:</label>
             <input type="text" name="nickName" @bind="nickName" />
             <br /> *@
-            </div>
+        </div>
     </form>
 </div>
-<p role="presentation">Truck Added: @truck.id @mileage </p>
+@* <p role="presentation">Truck Added: ID: @TruckId Mileage: @TruckMileage </p> *@
 
 <button color="Primary Color" class="btn btn-primary" @onclick="AddNewTruck">Confirm</button>
 @code {
     public int mileage;
     public string nickName;
     public TruckEntity truck;
+    public int TruckId = 0;
+    public int TruckMileage = 0;
     public void AddNewTruck()
     {
         truck = TruckRepository.CreateNewTruck(mileage,0 ,0 ,0 ,0, 0);
         TruckRepository.AddTruck(truck);
+    
     }
+    // public async void GetTruckAddedAsync()
+    // {
+            //Needs revisited not essential atm
+
+    //     TruckId = truck.id;
+    //     TruckMileage = truck.mileage;
+    // }
 }

@@ -13,11 +13,19 @@ namespace NimbusTests
             using (var context = new DataContext())
             {
                //Arrange
-               Address 
+               var mock = new Mock<DataContext>();
                 //Act
-
+                mock.Setup(x => x.DbPath).Returns("Data.db");
                 //Assert
             }
+        }
+        public void TestRepositories()
+        {
+            //Arrange
+            var mock = new Mock<Repository>();
+            //Act
+            mock.Setup(x => x.GetTruckById(1)).Returns(new TruckEntity());
+            //Assert
         }
     }
 }

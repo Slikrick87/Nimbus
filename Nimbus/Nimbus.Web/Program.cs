@@ -21,8 +21,10 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddSingleton<IFormFactor, FormFactor>()
 .AddSingleton<IAddressRepository, AddressRepository>()
-.AddSingleton<ITruckRepository>()
-.AddSingleton<IRouteRepository>();
+.AddSingleton<ITruckRepository, TruckRepository>()
+.AddSingleton<IRouteRepository, RouteRepository>()
+.AddSingleton<TempService>();
+
 //services.AddDbContext<TruckContext>(Options =>
 //Options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
 

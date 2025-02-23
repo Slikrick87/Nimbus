@@ -1,0 +1,16 @@
+﻿@* @using Nimbus.Shared.Entities
+@using Nimbus.Shared.Repositories;
+
+<h3>Database</h3>
+<table>@viewDatabase()
+</table>
+@code {
+    public List<RouteEntity> viewDatabase()
+    {
+        foreach (RouteEntity route in RouteRepository.GetAllRoutes())
+        {
+            return route;
+        }
+        return null;
+    }
+} *@

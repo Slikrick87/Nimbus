@@ -13,11 +13,18 @@ namespace Nimbus.Shared.Entities
     {
         [Key] public int Id { get; set; }
         public string? nickName;
-        [Required]
-        [ForeignKey("Truck")]
-        public TruckEntity? truckId;
-        public ICollection<Address> stops;
+
+        
+        [ForeignKey("TruckId")]
+        public int? truckId { get; set; }
+        public TruckEntity? truck { get; set; } 
+        public ICollection<Address>? stops;
 
         public RouteEntity() { }
+
+        public RouteEntity(string nickName)
+        {
+            this.nickName = nickName;
+        }
     }
 }

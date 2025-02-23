@@ -10,7 +10,7 @@ using Nimbus.Shared;
 namespace Nimbus.Shared.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250212185803_InitialCreate")]
+    [Migration("20250223164639_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -33,6 +33,9 @@ namespace Nimbus.Shared.Migrations
                         .HasColumnType("TEXT")
                         .HasColumnName("City");
 
+                    b.Property<int?>("routeId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("state")
                         .IsRequired()
                         .HasColumnType("TEXT")
@@ -50,6 +53,9 @@ namespace Nimbus.Shared.Migrations
 
                     b.HasIndex("RouteEntityId");
 
+                    b.HasIndex("routeId")
+                        .IsUnique();
+
                     b.ToTable("Addresses", (string)null);
                 });
 
@@ -59,7 +65,16 @@ namespace Nimbus.Shared.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("nickName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("truckId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("truckId")
+                        .IsUnique();
 
                     b.ToTable("Routes", (string)null);
                 });
@@ -71,6 +86,9 @@ namespace Nimbus.Shared.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("mileage")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("routeId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("tireFD")
@@ -87,6 +105,9 @@ namespace Nimbus.Shared.Migrations
 
                     b.HasKey("id");
 
+                    b.HasIndex("routeId")
+                        .IsUnique();
+
                     b.ToTable("Trucks", (string)null);
                 });
 
@@ -95,6 +116,30 @@ namespace Nimbus.Shared.Migrations
                     b.HasOne("Nimbus.Shared.Entities.RouteEntity", null)
                         .WithMany("stops")
                         .HasForeignKey("RouteEntityId");
+
+                    b.HasOne("Nimbus.Shared.Entities.RouteEntity", "route")
+                        .WithOne()
+                        .HasForeignKey("Nimbus.Shared.Entities.Address", "routeId");
+
+                    b.Navigation("route");
+                });
+
+            modelBuilder.Entity("Nimbus.Shared.Entities.RouteEntity", b =>
+                {
+                    b.HasOne("Nimbus.Shared.Entities.TruckEntity", "truck")
+                        .WithOne()
+                        .HasForeignKey("Nimbus.Shared.Entities.RouteEntity", "truckId");
+
+                    b.Navigation("truck");
+                });
+
+            modelBuilder.Entity("Nimbus.Shared.Entities.TruckEntity", b =>
+                {
+                    b.HasOne("Nimbus.Shared.Entities.RouteEntity", "route")
+                        .WithOne()
+                        .HasForeignKey("Nimbus.Shared.Entities.TruckEntity", "routeId");
+
+                    b.Navigation("route");
                 });
 
             modelBuilder.Entity("Nimbus.Shared.Entities.RouteEntity", b =>
