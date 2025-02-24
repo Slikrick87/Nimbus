@@ -38,15 +38,22 @@ namespace Nimbus.Shared.Repositories
         {
             return _context.Routes.Find(id); 
         }
-        public Address AddStop(Address address)
+        public Address AddStop(RouteEntity route, Address address)
         {
-            _context.Addresses.Add(address);
+            route.stops.Add(address);
             _context.SaveChanges();
             return address;
         }
         public List<Address> GetStops(int routeId)
         {
             return _context.Addresses.Where(a => a.id == routeId).ToList();
+        }
+        public void LinkTruck(int routeId, int truckId)
+        {
+            RouteEntity route = GetRouteById(routeId);
+            TruckEntity truck = _context.Trucks.Find(truckId);
+            route.truck = truck;
+            _context.SaveChanges();
         }
     }
 }

@@ -68,6 +68,7 @@ namespace Nimbus.Shared
                 .IsRequired(false);
             modelBuilder.Entity<RouteEntity>()
                 .HasMany(r => r.stops);
+                
             modelBuilder.Entity<RouteEntity>()
                 .ToTable("Routes");
             modelBuilder.Entity<RouteEntity>()
@@ -93,6 +94,9 @@ namespace Nimbus.Shared
                 .Property(a => a.streetNumber)
                 .HasColumnName("Street Number");
             modelBuilder.Entity<Address>()
+                .Property(a => a.streetName)
+                .HasColumnName("Street Name");
+            modelBuilder.Entity<Address>()
                 .Property(a => a.city)
                 .HasColumnName("City");
             modelBuilder.Entity<Address>()
@@ -103,11 +107,11 @@ namespace Nimbus.Shared
                 .HasColumnName("Zip Code");
             modelBuilder.Entity<Address>()
                 .ToTable("Addresses");
-            modelBuilder.Entity<Address>()
-                .HasOne(a => a.route)
-                .WithOne()
-                .HasForeignKey<Address>(a => a.routeId)
-                .IsRequired(false);
+            //modelBuilder.Entity<Address>()
+            //    .HasOne(a => a.route)
+            //    .WithOne()
+            //    .HasForeignKey<Address>(a => a.routeId)
+            //    .IsRequired(false);
             //modelBuilder.Entity<Address>(entity =>
             //{
             //    entity.HasKey(e => new { e.streetNumber, e.streetName, e.city, e.state, e.zipCode });

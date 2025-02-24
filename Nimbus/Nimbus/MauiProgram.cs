@@ -32,7 +32,7 @@ namespace Nimbus
             .AddSingleton<IAddressRepository, AddressRepository>()
             .AddSingleton<IRouteRepository, RouteRepository>()
             .AddSingleton<ITruckRepository, TruckRepository>()
-            .AddSingleton<TempService>()
+            .AddSingleton<SelectionService>()
             .AddMauiBlazorWebView();
 
             

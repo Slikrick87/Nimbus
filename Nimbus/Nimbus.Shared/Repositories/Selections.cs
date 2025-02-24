@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Nimbus.Shared.Repositories
 {
-    public class TempService
+    public class SelectionService
     {
         public RouteEntity? selectedRoute { get; set; }
         //public List<Address>? currentStops { get; set; }
-        public TruckEntity? currentTruck { get; set; }
+        public TruckEntity? selectedTruck { get; set; }
     }
 }

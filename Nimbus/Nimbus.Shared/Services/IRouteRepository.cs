@@ -17,6 +17,8 @@ namespace Nimbus.Shared.Services
         public RouteEntity CreateNewRoute();
         public List<RouteEntity> GetAllRoutes();
         public RouteEntity GetRouteById(int id);
+        public Address AddStop(RouteEntity route, Address address);
         public List<Address> GetStops(int routeId);
+        public void LinkTruck(int routeId, int truckId);
     }
 }

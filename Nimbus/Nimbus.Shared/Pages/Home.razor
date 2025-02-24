@@ -4,31 +4,65 @@
 @using Nimbus.Shared.Repositories;
 @inject ITruckRepository TruckRepository;
 @inject IRouteRepository RouteRepository;
-@inject TempService TempService;
+@inject SelectionService SelectionService;
 @inject IFormFactor FormFactor
 
 <PageTitle>Home</PageTitle>
-@if (truck != null && route != null)
+@if (SelectionService.selectedTruck != null)
 {
-    <h1>Selected Truck: @truck.id</h1>
-<h1>Selected Route: @route.Id, @route.nickName</h1>
+    <h1>Selected Truck: @SelectionService.selectedTruck.id</h1>
+    @* <h1>Selected Route: @route.Id, @route.nickName</h1> *@
+    <div>
+        <h3>Enter Current Mileage: </h3>
+        <h3>@TruckRepository.GetTruckById(SelectionService.selectedTruck.id).mileage</h3>
+        <input type="number" @bind="updatedMileage" />
+        <button class="btn btn-primary" @onclick="UpdateMileage">Set Mileage</button>
+    </div>
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="selectRoute">
+            <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Select Truck
+        </NavLink>
+    </div>
+}
+@* else if (SelectionService.selectedRoute == null)
+{
+    <h1>Select Route</h1>
+    foreach (RouteEntity route in RouteRepository.GetAllRoutes())
+    {
+        <div>
+            <input type="checkbox" @onchange="e => OnCheckboxChange(e, route)" />
+            <label>@route.Id, @route.nickName</label>
+        </div>
+    }
+} *@
+else if (SelectionService.selectedTruck == null)
+{
+    <h1>Select Truck</h1>
+    foreach (TruckEntity truck in TruckRepository.GetAllTrucks())
+    {
+        <div>
+            <input type="checkbox" @onchange="e => OnCheckboxChange(e, truck)" />
+            <label>@truck.id</label>
+        </div>
+    }
 }
 else
 {
     <h1>Please Select Truck and Route</h1>
+
+
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="selectTruck">
+            <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Select Truck
+        </NavLink>
+    </div>
+
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="selectRoute">
+            <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Select Route
+        </NavLink>
+    </div>
 }
-
-<div class="nav-item px-3">
-    <NavLink class="nav-link" href="selectTruck">
-        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Select Truck
-    </NavLink>
-</div>
-
-<div class="nav-item px-3">
-    <NavLink class="nav-link" href="selectRoute">
-        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Select Route
-    </NavLink>
-</div>
 @code {
 
     //Can move @code to a partial class with same name such as Home.cs
@@ -49,14 +83,11 @@ else
     //[Required(ErrorMessage = "Please enter a name.")])]
     //Add for calling error list display on creation pages and where according
 
-
+    public int updatedMileage;
     private string factor => FormFactor.GetFormFactor();
     private string platform => FormFactor.GetPlatform();
-    public List<RouteEntity> routes;
     public RouteEntity route;
     public TruckEntity truck;
-    public int routeid;
-    private string routeSelection;
     // private async Task SaveValue()
     // {
     //     await SecureStorage.Default.SetItemAsync("routeSelection", routeSelection);
@@ -65,29 +96,43 @@ else
     // {
     //     route = RouteRepository.GetRouteById(routeid);
     // }
-    public void OnCheckboxChange(ChangeEventArgs e, RouteEntity route)
+    public void OnCheckboxChange(ChangeEventArgs e, TruckEntity truck)
     {
         if ((bool)e.Value)
         {
-            TempService.selectedRoute = route;
+            SelectionService.selectedTruck = truck;
         }
         else
         {
-            TempService.selectedRoute = null;
+            SelectionService.selectedTruck = null;
         }
     }
+    // public void OnCheckBoxChange(ChangeEventArgs e, TruckEntity truck)
+    // {
+    //     if ((bool)e.Value)
+    //     {
+    //         SelectionService.selectedTruck = truck;
+    //     }
+    //     else
+    //     {
+    //         SelectionService.selectedTruck = null;
+    //     }
+    // }
     protected override void OnInitialized()
     {
         try
         {
-            truck = TempService.currentTruck;
-            route = TempService.selectedRoute;
+            truck = SelectionService.selectedTruck;
+            route = SelectionService.selectedRoute;
         }
         catch
         {
         }
     }
-
+    public void UpdateMileage()
+    {
+        TruckRepository.AdjustMileage(SelectionService.selectedTruck.id, updatedMileage);
+    }
     // HttpContext.Session.SetString("truckid", truckid.ToString());
     // Response.Redirect("/selectRoute");
 }

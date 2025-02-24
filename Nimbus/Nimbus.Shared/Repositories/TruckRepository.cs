@@ -14,7 +14,7 @@ namespace Nimbus.Shared.Logic
     public class TruckRepository : ITruckRepository
     {
         private readonly DataContext _context;
-        //public TruckEntity currentTruck;
+        //public TruckEntity selectedTruck;
         public DbSet<Address> addresses { get; set; }
         public DbSet<RouteEntity> routes { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
@@ -28,9 +28,9 @@ namespace Nimbus.Shared.Logic
             _context.Trucks.Add(truck);
             _context.SaveChanges();
         }
-        //public void SetCurrentTruck(TruckEntity truck)
+        //public void SetselectedTruck(TruckEntity truck)
         //{
-        //    currentTruck = truck;
+        //    selectedTruck = truck;
         //}
         public TruckEntity CreateNewTruck(int mileage, int tireFD, int tireRD, int tireFP, int tireRP, int oil)
         {
@@ -55,6 +55,13 @@ namespace Nimbus.Shared.Logic
             truck.tireRP += difference;
             truck.oilChange += difference;
             truck.mileage = mileage;
+            _context.SaveChanges();
+        }
+        public void LinkRoute(int truckId, int routeId)
+        {
+            TruckEntity truck = GetTruckById(truckId);
+            RouteEntity route = _context.Routes.Find(routeId);
+            truck.route = route;
             _context.SaveChanges();
         }
     }

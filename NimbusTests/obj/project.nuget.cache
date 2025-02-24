@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YFRrJWDCNsw=",
+  "dgSpecHash": "it+e4TzeR7g=",
   "success": false,
   "projectFilePath": "C:\\CodeYou\\SoftwareDevModule\\NimbusApp\\Nimbus2\\Nimbus\\NimbusTests\\NimbusTests.csproj",
   "expectedPackageFiles": [
@@ -62,7 +62,7 @@
     {
       "code": "NU1201",
       "level": "Error",
-      "message": "Project Nimbus is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Project Nimbus supports:\r\n  - net9.0-android35.0 (.NETCoreApp,Version=v9.0)\r\n  - net9.0-ios18.1 (.NETCoreApp,Version=v9.0)\r\n  - net9.0-maccatalyst18.1 (.NETCoreApp,Version=v9.0)\r\n  - net9.0-windows10.0.19041 (.NETCoreApp,Version=v9.0)",
+      "message": "Project Nimbus is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Project Nimbus supports:\r\n  - net9.0-android35.0 (.NETCoreApp,Version=v9.0)\r\n  - net9.0-ios18.2 (.NETCoreApp,Version=v9.0)\r\n  - net9.0-maccatalyst18.2 (.NETCoreApp,Version=v9.0)\r\n  - net9.0-windows10.0.19041 (.NETCoreApp,Version=v9.0)",
       "libraryId": "Nimbus",
       "targetGraphs": [
         "net9.0"

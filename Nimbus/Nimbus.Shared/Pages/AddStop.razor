@@ -1,11 +1,12 @@
 ﻿@using Nimbus.Shared.Services;
 @using Nimbus.Shared.Entities;
 @using Nimbus.Shared.Repositories;
-@inject TempService TempService;
+@inject SelectionService SelectionService;
 @inject IAddressRepository AddressRepository;
+@inject IRouteRepository RouteRepository;
 @inject IFormFactor FormFactor;
-@page "/newStop"
-@if (TempService.selectedRoute == null)
+@page "/addStop"
+@if (SelectionService.selectedRoute == null)
 {
     <h1>Please select a route first</h1>
     <div class="nav-item px-3">
@@ -58,7 +59,7 @@ else
     private void AddNewStop()
     {
     newAddress = AddressRepository.CreateNewAddress(streetNumber, streetName, city, state, zipCode);
-    AddressRepository.AddStop(newAddress);
+    RouteRepository.AddStop(SelectionService.selectedRoute, newAddress);
         stopsAdded++;
 
     }

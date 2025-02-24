@@ -23,7 +23,7 @@ builder.Services.AddSingleton<IFormFactor, FormFactor>()
 .AddSingleton<IAddressRepository, AddressRepository>()
 .AddSingleton<ITruckRepository, TruckRepository>()
 .AddSingleton<IRouteRepository, RouteRepository>()
-.AddSingleton<TempService>();
+.AddSingleton<SelectionService>();
 
 //services.AddDbContext<TruckContext>(Options =>
 //Options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));

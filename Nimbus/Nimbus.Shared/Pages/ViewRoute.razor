@@ -1,20 +1,21 @@
 ﻿@using Nimbus.Shared.Services;
 @using Nimbus.Shared.Entities;
 @using Nimbus.Shared.Repositories;
-@inject TempService TempService;
+@inject SelectionService SelectionService;
 @inject IRouteRepository RouteRepository;
 @inject IAddressRepository AddressRepository;
 @page "/manifest"
 <h3>View Route</h3>
-@try{
+@if(SelectionService.selectedRoute != null)
+{
 <ol>
-    @foreach (Address stop in RouteRepository.GetStops(TempService.selectedRoute.Id))
+    @foreach (Address stop in RouteRepository.GetStops(SelectionService.selectedRoute.Id))
     {
         <li>@stop.streetNumber @stop.streetName, @stop.city, @stop.state @stop.zipCode</li>
     }
 </ol>
 }
-catch
+else
 {
     <h1> No Stops On Current Route </h1>
     <div class="nav-item px-3">
@@ -24,7 +25,7 @@ catch
 </div>
 }
 
-}
+
 
 @code {
     public int routeId;

@@ -20,6 +20,7 @@ namespace Nimbus.Shared.Services
             services.AddTransient<IAddressRepository, AddressRepository>()
             .AddTransient<IRouteRepository, RouteRepository>()
             .AddTransient<ITruckRepository, TruckRepository>()
+            .AddSingleton<SelectionService>()
             .BuildServiceProvider();
 
             return services.BuildServiceProvider();

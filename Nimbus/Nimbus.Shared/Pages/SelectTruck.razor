@@ -1,8 +1,8 @@
 ﻿@using Nimbus.Shared.Services;
 @using Nimbus.Shared.Entities;
 @using Nimbus.Shared.Repositories;
-@inject ITruckRepository TruckRepository;
-@inject TempService TempService;
+@* @inject ITruckRepository TruckRepository;
+@inject SelectionService SelectionService;
 @inject IAddressRepository AddressRepository;
 @page "/selectTruck"
 
@@ -10,34 +10,25 @@
 <ul>
     @try
     {
-    @foreach (TruckEntity truck in TruckRepository.GetAllTrucks())
-    {
-        <li>@truck.id @truck.mileage</li>
-        <button class="btn btn-primary" @onclick="SetTruck">Select</button>
-    }
+        @foreach (TruckEntity truck in TruckRepository.GetAllTrucks())
+        {
+            <li>@truck.id @truck.mileage</li>
+            <button class="btn btn-primary" @onclick="() =>SetTruck(truck.id)">Select</button>
+        }
     }
     catch
     {
-    <p>No Trucks Available</p>
+        <p>No Trucks Available</p>
     }
 
 </ul>
-@* @try
-{
-    <p>Selected Truck: @TempService.currentTruck.id</p>
-}
-catch
-{
-    <p>No Truck Selected</p>
-} *@
-<button class="btn btn-primary" @onclick="SetTruck">Get Manifest</button>
-@code {
-    private int truckid;
 
-    public void SetTruck()
+@code {
+
+    public void SetTruck(int id)
     {
-        TempService.currentTruck = TruckRepository.GetTruckById(truckid);
+        SelectionService.selectedTruck = TruckRepository.GetTruckById(id);
         
     }
 
-}
+} *@
