@@ -1,3 +1,5 @@
-2025/02/23-19:56:12.425 3214 Reusing MANIFEST C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Nimbus.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
-2025/02/23-19:56:12.427 3214 Recovering log #3
-2025/02/23-19:56:12.431 3214 Reusing old log C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Nimbus.exe.WebView2\EBWebView\Default\Session Storage/000003.log 
+2025/02/24-20:06:26.352 60a0 Reusing MANIFEST C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Nimbus.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2025/02/24-20:06:26.353 60a0 Recovering log #3
+2025/02/24-20:06:26.354 60a0 Level-0 table #3: started
+2025/02/24-20:06:26.361 60a0 Level-0 table #3: 16439 bytes OK
+2025/02/24-20:06:26.370 60a0 Delete type=0 #3

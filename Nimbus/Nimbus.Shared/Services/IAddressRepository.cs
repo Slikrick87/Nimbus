@@ -15,6 +15,8 @@ namespace Nimbus.Shared.Services
         public DbSet<TruckEntity> trucks { get; set; }
         public void AddStop(Address address);
         public Address CreateNewAddress(int streetNumber, string streetName, string city, string state, int zip);
+        public Address CreateNewAddressWithRoute(int streetNumber, string streetName, string city, string state, int zip, RouteEntity route);
+
         public List<Address> GetAllAddresses();
         public Address GetAddressById(int id);
         //public Address GetStops(int id);

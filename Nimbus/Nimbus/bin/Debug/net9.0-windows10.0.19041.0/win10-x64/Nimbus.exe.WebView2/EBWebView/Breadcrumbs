@@ -1,21 +1,21 @@
+0:00:00 Tab1 StartNav2 #typed
 0:00:00 Tab1 FinishNav2
 0:00:00 Tab1 PageLoad
-0:00:13 Tab1 StartNav3 #renderer-user #link
-0:00:13 Tab1 FinishNav3
-0:00:14 Tab1 StartNav4 #renderer-user #form_submit
-0:00:14 Tab1 FinishNav4
-0:00:14 Tab1 PageLoad
-0:00:16 Tab1 StartNav5 #renderer-user #link
-0:00:16 Tab1 FinishNav5
-0:00:17 Autofill_PolledProfileSuggestions
-0:00:19 Autofill_PolledProfileSuggestions
+0:00:16 Tab1 StartNav3 #renderer-user #link
+0:00:16 Tab1 FinishNav3
+0:00:17 Tab1 StartNav4 #renderer-user #form_submit
+0:00:17 Tab1 FinishNav4
+0:00:17 Tab1 PageLoad
+0:00:22 Tab1 StartNav5 #renderer-user #link
+0:00:22 Tab1 FinishNav5
 0:00:24 Autofill_PolledProfileSuggestions
-0:00:24 Widget Closed: PopupBaseView
-0:00:28 Autofill_PolledProfileSuggestions
-0:00:28 Widget Closed: PopupBaseView
-0:00:28 Widget Closed: PopupBaseView
-0:00:30 Autofill_PolledProfileSuggestions
-0:01:09 Microsoft.Shutdown.OnWindowClosing
+0:00:31 Autofill_PolledProfileSuggestions
+0:00:39 Autofill_PolledProfileSuggestions
+0:00:41 Autofill_PolledProfileSuggestions
+0:00:41 Widget Closed: PopupBaseView
+0:00:41 Widget Closed: PopupBaseView
+0:00:42 Autofill_PolledProfileSuggestions
+0:04:47 Microsoft.Shutdown.OnWindowClosing
 0:00:00 Startup
 0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
 0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
@@ -28,4 +28,27 @@
 0:00:00 Tab1 StartNav2 #typed
 0:00:00 Tab1 FinishNav2
 0:00:00 Tab1 PageLoad
-0:01:30 Microsoft.Shutdown.OnWindowClosing
+0:22:57 Tab1 StartNav3 #renderer-user #link
+0:22:57 Tab1 FinishNav3
+0:22:58 Tab1 StartNav4 #renderer-user #form_submit
+0:22:58 Tab1 FinishNav4
+0:22:58 Tab1 PageLoad
+0:23:00 Tab1 StartNav5 #renderer-user #link
+0:23:00 Tab1 FinishNav5
+0:23:01 Autofill_PolledProfileSuggestions
+0:23:53 Autofill_PolledProfileSuggestions
+0:23:54 Widget Closed: PopupBaseView
+0:23:55 Widget Closed: PopupBaseView
+0:23:55 Widget Closed: PopupBaseView
+0:23:56 Widget Closed: PopupBaseView
+0:23:59 Autofill_PolledProfileSuggestions
+0:23:59 Widget Closed: PopupBaseView
+0:23:59 Widget Closed: PopupBaseView
+0:24:00 Widget Closed: PopupBaseView
+0:24:00 Widget Closed: PopupBaseView
+0:24:00 Widget Closed: PopupBaseView
+0:24:02 Autofill_PolledProfileSuggestions
+0:24:02 Widget Closed: PopupBaseView
+0:24:03 Widget Closed: PopupBaseView
+0:24:03 Autofill_PolledProfileSuggestions
+0:34:15 Microsoft.Shutdown.OnWindowClosing

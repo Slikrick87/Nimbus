@@ -58,7 +58,7 @@ else
     public int zipCode;
     private void AddNewStop()
     {
-    newAddress = AddressRepository.CreateNewAddress(streetNumber, streetName, city, state, zipCode);
+    newAddress = AddressRepository.CreateNewAddressWithRoute(streetNumber, streetName, city, state, zipCode, SelectionService.selectedRoute);
     RouteRepository.AddStop(SelectionService.selectedRoute, newAddress);
         stopsAdded++;
 

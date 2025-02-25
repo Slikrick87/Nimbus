@@ -24,6 +24,11 @@ namespace Nimbus.Shared.Services
             Address address = new Address(streetNumber, streetName, city, state, zip);
             return address/*new Address(streetNumber, streetName, city, state, zip)*/;
         }
+        public Address CreateNewAddressWithRoute(int streetNumber, string streetName, string city, string state, int zip, RouteEntity route)
+        {
+            Address address = new Address(streetNumber, streetName, city, state, zip, route);
+            return address/*new Address(streetNumber, streetName, city, state, zip)*/;
+        }
         public List<Address> GetAllAddresses()
         {
             return _context.Addresses.ToList();

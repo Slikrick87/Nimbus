@@ -39,5 +39,16 @@ namespace Nimbus.Shared.Entities
             this.zipCode = zipCode;
             //this.isDelivered = false;
         }
+        public Address(int streetNumber, string streetName, string city, string state, int zipCode, RouteEntity route)
+        {
+            this.streetNumber = streetNumber;
+            this.streetName = streetName;
+            this.city = city;
+            this.state = state;
+            this.zipCode = zipCode;
+            this.route = route;
+            this.routeId = route.Id;
+            //this.isDelivered = false;
+        }
     }
 }

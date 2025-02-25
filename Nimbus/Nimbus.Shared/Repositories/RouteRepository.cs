@@ -40,7 +40,8 @@ namespace Nimbus.Shared.Repositories
         }
         public Address AddStop(RouteEntity route, Address address)
         {
-            route.stops.Add(address);
+            _context.Addresses.Add(address);
+            //route.stops.Add(address);
             _context.SaveChanges();
             return address;
         }

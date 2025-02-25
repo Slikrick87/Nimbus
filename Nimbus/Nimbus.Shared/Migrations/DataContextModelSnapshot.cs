@@ -22,13 +22,13 @@ namespace Nimbus.Shared.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("RouteEntityId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("city")
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("City");
+
+                    b.Property<int?>("routeId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("state")
                         .IsRequired()
@@ -50,7 +50,7 @@ namespace Nimbus.Shared.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("RouteEntityId");
+                    b.HasIndex("routeId");
 
                     b.ToTable("Addresses", (string)null);
                 });
@@ -109,9 +109,11 @@ namespace Nimbus.Shared.Migrations
 
             modelBuilder.Entity("Nimbus.Shared.Entities.Address", b =>
                 {
-                    b.HasOne("Nimbus.Shared.Entities.RouteEntity", null)
+                    b.HasOne("Nimbus.Shared.Entities.RouteEntity", "route")
                         .WithMany("stops")
-                        .HasForeignKey("RouteEntityId");
+                        .HasForeignKey("routeId");
+
+                    b.Navigation("route");
                 });
 
             modelBuilder.Entity("Nimbus.Shared.Entities.RouteEntity", b =>
