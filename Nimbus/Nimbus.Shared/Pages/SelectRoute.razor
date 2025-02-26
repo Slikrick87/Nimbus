@@ -7,11 +7,9 @@
 @page "/selectRoute"
 
 <h3>Select Route</h3>
-@* <h1>Truck: @TruckRepository.selectedTruck.id</h1>
- *@
 <form method="post">
     <ul>
-        @foreach (RouteEntity route in RouteRepository.GetAllRoutes())
+        @foreach (RouteEntity route in routes)
         {
             <li>ID: @route.Id Area: @route.nickName</li>
             <button color="Primary Color" class="btn btn-primary" @onclick="() => ChooseRoute(route.Id)">Select</button>
@@ -22,7 +20,7 @@
 {
     <h3>Selected Truck: @SelectionService.selectedTruck.id</h3>
     <h3>Selected Route: @SelectionService.selectedRoute.Id</h3>
-    <button color="Primary Color" class="btn btn-primary" @onclick="LinkTruckAndRoute">Set Truck To Route</button>
+    <button color="Primary Color" class="btn btn-primary" @onclick="LinkTruckAndRouteAsync">Set Truck To Route</button>
 }
 <div class="nav-item px-3">
     <NavLink class="nav-link" href="addStop">
@@ -31,16 +29,3 @@
 </div>
 @* <h3>Current Route: @route.Id Name: @route.nickName</h3>
  *@
-@code {
-    public RouteEntity? route;
-    public TruckEntity? truck;
-    public void ChooseRoute(int id)
-    {
-        SelectionService.selectedRoute = RouteRepository.GetRouteById(id);
-    }
-    public void LinkTruckAndRoute()
-    {
-         RouteRepository.LinkTruck(SelectionService.selectedTruck.id, SelectionService.selectedRoute.Id);
-         TruckRepository.LinkRoute(SelectionService.selectedRoute.Id, SelectionService.selectedTruck.id);
-    }
-}

@@ -19,24 +19,25 @@ else
 {
     <PageTitle>AddStop</PageTitle>
 
-<h1>Add new Stops</h1>
+<h1>Add New Stops</h1>
+    <h3>To Route: @SelectionService.selectedRoute.Id , @SelectionService.selectedRoute.nickName</h3>
 
 <div class="d-flex">
 <form method="post">
     <div>
-    <label for="streetNumber">Street Number:</label>
+    <label name="streetNumber">Street Number:</label>
     <input type="number" name="streetNumber" @bind="streetNumber" />
     <br/>
-    <label for="streetName">Street Name:</label>
+    <label name="streetName">Street Name:</label>
     <input type="text" name="streetName" @bind="streetName" />
     <br/>
-    <label for="city">City:</label>
+    <label name="city">City:</label>
     <input type="text" name="city" @bind="city"/>
     <br/>
-    <label for="state">State:</label>
+    <label name="state">State:</label>
     <input type="text" name="state" @bind="state"/>
     <br/>
-    <label for="zipCode">Zip Code:</label>
+    <label name="zipCode">Zip Code:</label>
     <input type="number" name="zipCode" @bind="zipCode"/>
     <br/>
     </div>
@@ -45,24 +46,5 @@ else
 
 <p role="presentation">Stops Added: @stopsAdded @* @newAddress.streetNumber @newAddress.streetName, @newAddress.city, @newAddress.state @newAddress.zipCode *@</p>
 
-<button color="Primary Color" class="btn btn-primary" @onclick="AddNewStop">Confirm</button>
-}
-@code {
-    public int stopsAdded = 0;
-    public Address? newAddress;
-    //public string addedStop;
-    public int streetNumber;
-    public string streetName;
-    public string city;
-    public string state;
-    public int zipCode;
-    private void AddNewStop()
-    {
-    newAddress = AddressRepository.CreateNewAddressWithRoute(streetNumber, streetName, city, state, zipCode, SelectionService.selectedRoute);
-    RouteRepository.AddStop(SelectionService.selectedRoute, newAddress);
-        stopsAdded++;
-
-    }
-    //addedStop = $"{streetNumber} {streetName}, {city}, {state} {zipCode}";
-    
+<button color="Primary Color" class="btn btn-primary" @onclick="AddNewStopAsync">Confirm</button>
 }

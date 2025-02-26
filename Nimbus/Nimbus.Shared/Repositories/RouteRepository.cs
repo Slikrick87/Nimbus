@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Nimbus.Shared.Entities;
+using Nimbus.Shared.Logic;
 using Nimbus.Shared.Services;
 using System;
 using System.Collections.Generic;
@@ -19,42 +20,44 @@ namespace Nimbus.Shared.Repositories
         {
             _context = context;
         }
-        public void AddRoute(RouteEntity route)
+        public async Task AddRouteAsync(RouteEntity route)
         {
 
-            _context.Routes.Add(route);
-            _context.SaveChanges();
+            await Task.Run(() => _context.Routes.Add(route));
+            await Task.Run(() => _context.SaveChanges());
         }
-        public RouteEntity CreateNewRoute()
+        public async Task<RouteEntity> CreateNewRouteAsync()
         {
-            RouteEntity route = new RouteEntity();
+            RouteEntity route = await Task.Run(() => new RouteEntity());
             return route;
         }
-        public List<RouteEntity> GetAllRoutes()
+        public async Task<List<RouteEntity>> GetAllRoutesAsync()
         {
-            return _context.Routes.ToList();
+            return await _context.Routes.ToListAsync();
         }
-        public RouteEntity GetRouteById(int id)
+        public async Task<RouteEntity> GetRouteByIdAsync(int id)
         {
-            return _context.Routes.Find(id); 
+            try { return await _context.Routes.FindAsync(id); }
+            catch { return null; }
         }
-        public Address AddStop(RouteEntity route, Address address)
+        public async Task<Address> AddStopAsync(RouteEntity route, Address address)
         {
-            _context.Addresses.Add(address);
-            //route.stops.Add(address);
-            _context.SaveChanges();
+            await Task.Run(() => _context.Addresses.Add(address));
+            Task taskOne = Task.Run(() => _context.SaveChangesAsync());
+            
             return address;
         }
-        public List<Address> GetStops(int routeId)
+        public async Task<List<Address>> GetStopsAsync(int routeId)
         {
-            return _context.Addresses.Where(a => a.id == routeId).ToList();
+            return await _context.Addresses.Where(a => a.routeId == routeId).ToListAsync();
         }
-        public void LinkTruck(int routeId, int truckId)
+        public async Task LinkTruckAsync(int routeId, int truckId)
         {
-            RouteEntity route = GetRouteById(routeId);
-            TruckEntity truck = _context.Trucks.Find(truckId);
+            TruckRepository truckRepository = new TruckRepository(_context);
+            RouteEntity route = await GetRouteByIdAsync(routeId);
+            TruckEntity truck = truckRepository.GetTruckById(truckId);
             route.truck = truck;
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

@@ -84,6 +84,9 @@ namespace Nimbus.Shared.Migrations
                     b.Property<int>("mileage")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("oilChange")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("routeId")
                         .HasColumnType("INTEGER");
 

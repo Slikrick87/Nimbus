@@ -21,6 +21,7 @@ namespace Nimbus.Shared.Services
         public List<TruckEntity> GetAllTrucks();
         public TruckEntity GetTruckById(int id);
         public void AdjustMileage(int truckId, int mileage);
-	   public void LinkRoute(int truckId, int routeId);
-	}
+	    public void LinkRoute(int truckId, int routeId);
+        public void ResetMileage(TruckEntity truck, String choice);
+    }
 }

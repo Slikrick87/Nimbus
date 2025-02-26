@@ -1,18 +1,19 @@
 ﻿@using Nimbus.Shared.Repositories;
 @using Nimbus.Shared.Entities;
 @inject SelectionService SelectionService;
+@inject TruckRepository TruckRepository;
 @page "/selections"
 <h3>SelectionService</h3>
-
+Truck
 @if (SelectionService.selectedRoute != null)
 {
-    
+
     <h2>Selected Route:</h2>
     <form>
-    <p>ID: @SelectionService.selectedRoute.Id</p>
-    <p>Nickname: @SelectionService.selectedRoute.nickName</p>
-    <p>Truck ID: @SelectionService.selectedRoute.truckId</p>
-    <p>Number of Stops: @(SelectionService.selectedRoute.stops?.Count ?? 0)</p>
+        <p>ID: @SelectionService.selectedRoute.Id</p>
+        <p>Nickname: @SelectionService.selectedRoute.nickName</p>
+        <p>Truck ID: @SelectionService.selectedRoute.truckId</p>
+        <p>Number of Stops: @(SelectionService.selectedRoute.stops?.Count)</p>
     </form>
 }
 else
@@ -22,15 +23,24 @@ else
 @if(SelectionService.selectedTruck != null)
 {
     <form>
-    <h2>Selected Truck:</h2>
-    <p>ID: @SelectionService.selectedTruck.id</p>
-    <p>Mileage: @SelectionService.selectedTruck.mileage</p>
+        <h2>Selected Truck:</h2>
+        <p>ID: @SelectionService.selectedTruck.id</p>
+        <p>Mileage: @SelectionService.selectedTruck.mileage</p>
+        <p>Oil Mileage: @SelectionService.selectedTruck.oilChange</p>
+        <button class="btn btn-primary" @onclick="OilChange">Oil Changed</button>
+        <p>Front Driver Tire: @SelectionService.selectedTruck.tireFD</p>
+        <button class="btn btn-primary" @onclick="TireFDChange">Front Driver Tire Changed</button>
+        <p>Front Passenger Tire: @SelectionService.selectedTruck.tireFP</p>
+        <button class="btn btn-primary" @onclick="TireFPChange">Front Passenger Tire Changed</button>
+        <p>Rear Driver Tire: @SelectionService.selectedTruck.tireRD</p>
+        <button class="btn btn-primary" @onclick="TireRDChange">Rear Driver Tire Changed</button>
+        <p>Rear Passenger Tire: @SelectionService.selectedTruck.tireRP</p>
+        <button class="btn btn-primary" @onclick="TireRPChange">Rear Passenger Tire Changed</button>
     </form>
+    <button class="btn btn-primary" @onclick="ClearSelectionAsync">Reset Selected Truck and Route</button>
 }
 else
 {
     <h2>No truck selected</h2>
 }
-@code {
 
-}

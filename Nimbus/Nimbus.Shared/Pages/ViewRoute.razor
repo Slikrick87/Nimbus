@@ -4,12 +4,13 @@
 @inject SelectionService SelectionService;
 @inject IRouteRepository RouteRepository;
 @inject IAddressRepository AddressRepository;
+@inject ITruckRepository TruckRepository;
 @page "/manifest"
 <h3>View Route</h3>
 @if(SelectionService.selectedRoute != null)
 {
 <ol>
-    @foreach (Address stop in RouteRepository.GetStops(SelectionService.selectedRoute.Id))
+    @foreach (Address stop in allStops)
     {
         <li>@stop.streetNumber @stop.streetName, @stop.city, @stop.state @stop.zipCode</li>
     }
@@ -27,15 +28,4 @@ else
 
 
 
-@code {
-    public int routeId;
-    //RouteEntity route;
-    List<Address> allStops = new List<Address>();
-    public void GetRoute()
-    {
-        
-        //route = RouteRepository.GetRouteById(routeId);
-        allStops = RouteRepository.GetStops(routeId);
-    }
 
-}

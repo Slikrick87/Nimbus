@@ -52,6 +52,9 @@ namespace Nimbus.Shared
                 .Property(t => t.tireRP)
                 .IsRequired();
             modelBuilder.Entity<TruckEntity>()
+                .Property(t => t.oilChange)
+                .IsRequired();
+            modelBuilder.Entity<TruckEntity>()
                 .HasOne(t => t.route)
                 .WithOne()
                 .HasForeignKey<TruckEntity>(t => t.routeId)

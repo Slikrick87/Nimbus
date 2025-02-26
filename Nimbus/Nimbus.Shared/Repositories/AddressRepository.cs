@@ -14,28 +14,32 @@ namespace Nimbus.Shared.Services
         {
             _context = context;
         }
-        public void AddStop(Address address)
+        public async Task AddStopAsync(Address address)
         {
-            _context.Addresses.Add(address);
-           _context.SaveChanges();
+           await Task.Run(() => _context.Addresses.Add(address));
+           Task taskTwo = Task.Run(() => _context.SaveChangesAsync());
         }
-        public Address CreateNewAddress(int streetNumber, string streetName, string city, string state, int zip)
+        public async Task<Address> CreateNewAddressAsync(int streetNumber, string streetName, string city, string state, int zip)
         {
-            Address address = new Address(streetNumber, streetName, city, state, zip);
-            return address/*new Address(streetNumber, streetName, city, state, zip)*/;
+            Address address = await Task.Run(() => 
+                address = new Address(streetNumber, streetName, city, state, zip));
+
+            return address;
         }
-        public Address CreateNewAddressWithRoute(int streetNumber, string streetName, string city, string state, int zip, RouteEntity route)
+        public async Task<Address> CreateNewAddressWithRouteAsync(int streetNumber, string streetName, string city, string state, int zip, RouteEntity route)
         {
-            Address address = new Address(streetNumber, streetName, city, state, zip, route);
-            return address/*new Address(streetNumber, streetName, city, state, zip)*/;
+            Address address = await Task.Run(() => 
+                new Address(streetNumber, streetName, city, state, zip, route));
+            
+            return address;
         }
-        public List<Address> GetAllAddresses()
+        public async Task<List<Address>> GetAllAddressesAsync()
         {
-            return _context.Addresses.ToList();
+            return await _context.Addresses.ToListAsync();
         }
-        public Address GetAddressById(int id)
+        public async Task<Address> GetAddressByIdAsync(int id)
         {
-            try { return _context.Addresses.Find(id); }
+            try { return await _context.Addresses.FindAsync(id); }
             catch { return null; }
         }
         //public List<Address> GetStops(int id)

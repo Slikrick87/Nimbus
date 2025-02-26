@@ -13,12 +13,12 @@ namespace Nimbus.Shared.Services
         public DbSet<RouteEntity> routes { get; set; }
         public DbSet<Address> addresses { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
-        public void AddRoute(RouteEntity route);
-        public RouteEntity CreateNewRoute();
-        public List<RouteEntity> GetAllRoutes();
-        public RouteEntity GetRouteById(int id);
-        public Address AddStop(RouteEntity route, Address address);
-        public List<Address> GetStops(int routeId);
-        public void LinkTruck(int routeId, int truckId);
+        public Task AddRouteAsync(RouteEntity route);
+        public Task<RouteEntity> CreateNewRouteAsync();
+        public Task<List<RouteEntity>> GetAllRoutesAsync();
+        public Task<RouteEntity> GetRouteByIdAsync(int id);
+        public Task<Address> AddStopAsync(RouteEntity route, Address address);
+        public Task<List<Address>> GetStopsAsync(int routeId);
+        public Task LinkTruckAsync(int routeId, int truckId);
     }
 }

@@ -9,12 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nimbus.Shared.Logic
+namespace Nimbus.Shared.Repositories
 {
     public class TruckRepository : ITruckRepository
     {
         private readonly DataContext _context;
-        //public TruckEntity selectedTruck;
         public DbSet<Address> addresses { get; set; }
         public DbSet<RouteEntity> routes { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
@@ -61,8 +60,39 @@ namespace Nimbus.Shared.Logic
         {
             TruckEntity truck = GetTruckById(truckId);
             RouteEntity route = _context.Routes.Find(routeId);
-            truck.route = route;
+            Task.Run(() => truck.route = route);
             _context.SaveChanges();
         }
+        public void ResetMileage(TruckEntity truck, String choice)
+        {
+            //TruckEntity truck = GetTruckById(selectedId);
+            switch (choice)
+            {
+                case "oil":
+                    truck.oilChange = 0;
+                    break;
+                case "tireFD":
+                    truck.tireFD = 0;
+                    break;
+                case "tireRD":
+                    truck.tireRD = 0;
+                    break;
+                case "tireFP":
+                    truck.tireFP = 0;
+                    break;
+                case "tireRP":
+                    truck.tireRP = 0;
+                    break;
+                case "all":
+                    truck.oilChange = 0;
+                    truck.tireFD = 0;
+                    truck.tireRD = 0;
+                    truck.tireFP = 0;
+                    truck.tireRP = 0;
+                    break;
+            }
+            _context.SaveChanges();
+        }
+
     }
 }
