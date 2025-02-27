@@ -31,7 +31,7 @@ else if (SelectionService.selectedTruck == null)
     {
         <div>
             <input type="checkbox" @onchange="e => OnCheckboxChange(e, truck)" />
-            <label>@truck.id</label>
+            <label>Truck Id: @truck.id Mileage: @truck.mileage</label>
         </div>
     }
 }

@@ -15,6 +15,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property._MvvmToolkitIsUsingWindowsRuntimePack = false
+build_property.CsWinRTComponent = 
+build_property.CsWinRTAotOptimizerEnabled = 
+build_property.CsWinRTAotWarningLevel = 
 build_property.RootNamespace = Nimbus.Shared
 build_property.RootNamespace = Nimbus.Shared
 build_property.ProjectDir = C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Shared\
@@ -60,16 +65,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/CodeYou/SoftwareDevModule/NimbusApp/Nimbus2/Nimbus/Nimbus/Nimbus.Shared/Pages/Map.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/CodeYou/SoftwareDevModule/NimbusApp/Nimbus2/Nimbus/Nimbus/Nimbus.Shared/Pages/MapNav.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwTmF2LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/CodeYou/SoftwareDevModule/NimbusApp/Nimbus2/Nimbus/Nimbus/Nimbus.Shared/Pages/Selections.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsZWN0aW9ucy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/CodeYou/SoftwareDevModule/NimbusApp/Nimbus2/Nimbus/Nimbus/Nimbus.Shared/Pages/SelectRoute.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsZWN0Um91dGUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/CodeYou/SoftwareDevModule/NimbusApp/Nimbus2/Nimbus/Nimbus/Nimbus.Shared/Pages/SelectTruck.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsZWN0VHJ1Y2sucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/CodeYou/SoftwareDevModule/NimbusApp/Nimbus2/Nimbus/Nimbus/Nimbus.Shared/Pages/ViewRoute.razor]

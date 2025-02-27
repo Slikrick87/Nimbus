@@ -17,9 +17,9 @@ namespace Nimbus.Shared.Services
             var services = new ServiceCollection();
 
             services.AddDbContext<DataContext>();
-            services.AddTransient<IAddressRepository, AddressRepository>()
-            .AddTransient<IRouteRepository, RouteRepository>()
-            .AddTransient<ITruckRepository, TruckRepository>()
+            services.AddSingleton<IAddressRepository, AddressRepository>()
+            .AddSingleton<IRouteRepository, RouteRepository>()
+            .AddSingleton<ITruckRepository, TruckRepository>()
             .AddSingleton<SelectionService>()
             .BuildServiceProvider();
 

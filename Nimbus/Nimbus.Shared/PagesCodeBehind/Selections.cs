@@ -6,14 +6,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using Nimbus.Shared.Repositories;
+using Nimbus.Shared.Repositories;
 using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.DependencyInjection;
+using Nimbus.Shared.Services;
 
 namespace Nimbus.Shared.Pages
 {
     public partial class Selections
     {
-        
         public async Task ClearSelectionAsync()
         {
             Task taskOne = Task.Run(() => SelectionService.selectedTruck = null);

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "flXBmhSmQTk=",
+  "dgSpecHash": "uulFOGw7eIY=",
   "success": true,
   "projectFilePath": "C:\\CodeYou\\SoftwareDevModule\\NimbusApp\\Nimbus2\\Nimbus\\Nimbus\\Nimbus.Shared\\Nimbus.Shared.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rjtom\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.0\\microsoft.aspnetcore.authorization.9.0.0.nupkg.sha512",

@@ -5,6 +5,7 @@ using Nimbus.Shared.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -57,7 +58,7 @@ namespace Nimbus.Shared.Repositories
             RouteEntity route = await GetRouteByIdAsync(routeId);
             TruckEntity truck = truckRepository.GetTruckById(truckId);
             route.truck = truck;
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
         }
     }
 }

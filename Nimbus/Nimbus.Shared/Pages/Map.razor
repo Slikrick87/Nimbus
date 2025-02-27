@@ -1,0 +1,43 @@
+﻿@using Nimbus.Shared.Services;
+@using Nimbus.Shared.Entities;
+@using Nimbus.Shared.Repositories;
+@using Nimbus.Shared.PagesCodeBehind;
+
+@page "/map"
+
+@inject IJSRuntime JS
+
+<h3>Map</h3>
+<div id="map" style="height:500px;width:100%;"></div>
+<script>
+    let map;
+
+    function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 37.7749, lng: -122.4194 },
+    zoom: 7,
+    });
+
+    }
+
+</script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=@Keys.mapsKey"></script>
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+            try
+            {
+                await JS.InvokeVoidAsync("initMap");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error initializing map: {ex.Message}");
+            }
+    }
+}

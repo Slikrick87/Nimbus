@@ -61,7 +61,7 @@ namespace Nimbus.Shared.Repositories
             TruckEntity truck = GetTruckById(truckId);
             RouteEntity route = _context.Routes.Find(routeId);
             Task.Run(() => truck.route = route);
-            _context.SaveChanges();
+            _context.SaveChangesAsync();
         }
         public void ResetMileage(TruckEntity truck, String choice)
         {
