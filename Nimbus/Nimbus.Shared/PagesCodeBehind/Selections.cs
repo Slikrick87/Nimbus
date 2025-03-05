@@ -22,23 +22,23 @@ namespace Nimbus.Shared.Pages
         }
         public void OilChange()
         {
-            TruckRepository.ResetMileage(SelectionService.selectedTruck, "oil");
+            TruckRepository.ResetMileageAsync(SelectionService.selectedTruck, "oil");
         }
         public void TireFDChange()
         {
-            TruckRepository.ResetMileage(SelectionService.selectedTruck, "tireFD");
+            TruckRepository.ResetMileageAsync(SelectionService.selectedTruck, "tireFD");
         }
         public void TireFPChange()
         {
-            TruckRepository.ResetMileage(SelectionService.selectedTruck, "tireFP");
+            TruckRepository.ResetMileageAsync(SelectionService.selectedTruck, "tireFP");
         }
         public void TireRDChange()
         {
-            TruckRepository.ResetMileage(SelectionService.selectedTruck, "tireRD");
+            TruckRepository.ResetMileageAsync(SelectionService.selectedTruck, "tireRD");
         }
         public void TireRPChange()
         {
-            TruckRepository.ResetMileage(SelectionService.selectedTruck, "tireRP");
+            TruckRepository.ResetMileageAsync(SelectionService.selectedTruck, "tireRP");
         }
     }
 }

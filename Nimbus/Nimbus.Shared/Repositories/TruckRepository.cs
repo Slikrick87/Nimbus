@@ -21,51 +21,59 @@ namespace Nimbus.Shared.Repositories
         {
             _context = context;
         }
-        public void AddTruck(TruckEntity truck)
+        public async Task AddTruckAsync(TruckEntity truck)
         {
 
-            _context.Trucks.Add(truck);
-            _context.SaveChanges();
+            await Task.Run(() => _context.Trucks.Add(truck));
+            await Task.Run(() => _context.SaveChanges());
         }
         //public void SetselectedTruck(TruckEntity truck)
         //{
         //    selectedTruck = truck;
         //}
-        public TruckEntity CreateNewTruck(int mileage, int tireFD, int tireRD, int tireFP, int tireRP, int oil)
+        public async Task<TruckEntity> CreateNewTruckAsync(int mileage, int tireFD, int tireRD, int tireFP, int tireRP, int oil)
         {
-            TruckEntity truck = new TruckEntity(mileage, tireFD, tireRD, tireFP, tireRP, oil);
+            TruckEntity truck = await Task.Run(() => 
+                new TruckEntity(mileage, tireFD, tireRD, tireFP, tireRP, oil));
             return truck;
         }
-        public List<TruckEntity> GetAllTrucks()
+        public async Task<List<TruckEntity>> GetAllTrucksAsync()
         {
-            return _context.Trucks.ToList();
+            return await _context.Trucks.ToListAsync();
         }
-        public TruckEntity GetTruckById(int id)
+        public async Task<TruckEntity> GetTruckByIdAsync(int id)
         {
-            return _context.Trucks.Find(id); 
+            try { return await _context.Trucks.FindAsync(id); }
+            catch { return null; }
         }
-        public void AdjustMileage(int id, int mileage)
+        public async Task AdjustMileageAsync(int id, int mileage)
         {
-            TruckEntity truck = GetTruckById(id);
-            int difference = mileage - truck.mileage;
+            TruckEntity truck = await GetTruckByIdAsync(id);
+            int difference = 0;
+            await Task.Run(() =>
+            {
+                difference = mileage - truck.mileage;
+            });
+            await Task.Run(() =>
+            { 
             truck.tireFD += difference;
             truck.tireRD += difference;
             truck.tireFP += difference;
             truck.tireRP += difference;
             truck.oilChange += difference;
             truck.mileage = mileage;
-            _context.SaveChanges();
+            });
+            await _context.SaveChangesAsync();
         }
-        public void LinkRoute(int truckId, int routeId)
+        public async Task LinkRouteAsync(int truckId, int routeId)
         {
-            TruckEntity truck = GetTruckById(truckId);
-            RouteEntity route = _context.Routes.Find(routeId);
-            Task.Run(() => truck.route = route);
-            _context.SaveChangesAsync();
+            TruckEntity truck = await GetTruckByIdAsync(truckId);
+            RouteEntity? route = await _context.Routes.FindAsync(routeId);
+            await Task.Run(() => truck.route = route);
+            await _context.SaveChangesAsync();
         }
-        public void ResetMileage(TruckEntity truck, String choice)
+        public async Task ResetMileageAsync(TruckEntity truck, String choice)
         {
-            //TruckEntity truck = GetTruckById(selectedId);
             switch (choice)
             {
                 case "oil":
@@ -91,7 +99,7 @@ namespace Nimbus.Shared.Repositories
                     truck.tireRP = 0;
                     break;
             }
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
     }

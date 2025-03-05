@@ -70,10 +70,6 @@ namespace Nimbus.Shared.Services
             }
 
         }
-        public async Task GetCordinatesOfAddress()
-        {
-
-        }
-
+        
         }
 }

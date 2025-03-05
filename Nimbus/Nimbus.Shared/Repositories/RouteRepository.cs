@@ -56,7 +56,7 @@ namespace Nimbus.Shared.Repositories
         {
             TruckRepository truckRepository = new TruckRepository(_context);
             RouteEntity route = await GetRouteByIdAsync(routeId);
-            TruckEntity truck = truckRepository.GetTruckById(truckId);
+            TruckEntity truck = await truckRepository.GetTruckByIdAsync(truckId);
             route.truck = truck;
             _context.SaveChanges();
         }

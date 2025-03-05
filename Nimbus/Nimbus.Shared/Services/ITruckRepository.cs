@@ -16,12 +16,12 @@ namespace Nimbus.Shared.Services
         public DbSet<RouteEntity> routes { get; set; }
         public DbSet<TruckEntity> trucks { get; set; }
         //public void SetselectedTruck(TruckEntity truck);
-        public void AddTruck(TruckEntity truck);
-        public TruckEntity CreateNewTruck(int mileage, int tireFD, int tireRD, int tireFP, int tireRP, int oil);
-        public List<TruckEntity> GetAllTrucks();
-        public TruckEntity GetTruckById(int id);
-        public void AdjustMileage(int truckId, int mileage);
-	    public void LinkRoute(int truckId, int routeId);
-        public void ResetMileage(TruckEntity truck, String choice);
+        public Task AddTruckAsync(TruckEntity truck);
+        public Task<TruckEntity> CreateNewTruckAsync(int mileage, int tireFD, int tireRD, int tireFP, int tireRP, int oil);
+        public Task<List<TruckEntity>> GetAllTrucksAsync();
+        public Task<TruckEntity> GetTruckByIdAsync(int id);
+        public Task AdjustMileageAsync(int truckId, int mileage);
+	    public Task LinkRouteAsync(int truckId, int routeId);
+        public Task ResetMileageAsync(TruckEntity truck, String choice);
     }
 }
