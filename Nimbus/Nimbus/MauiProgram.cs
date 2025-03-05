@@ -32,6 +32,7 @@ namespace Nimbus
             .AddSingleton<IAddressRepository, AddressRepository>()
             .AddSingleton<IRouteRepository, RouteRepository>()
             .AddSingleton<ITruckRepository, TruckRepository>()
+            .AddSingleton<IGeoLocationService,GeoLocationService>()
             .AddSingleton<SelectionService>()
             .AddMauiBlazorWebView();
 

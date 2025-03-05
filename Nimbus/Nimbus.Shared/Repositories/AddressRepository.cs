@@ -1,6 +1,7 @@
 ﻿using Nimbus.Shared.Services;
 using Nimbus.Shared.Entities;
 using Microsoft.EntityFrameworkCore;
+using Nimbus.Shared.Repositories;
 
 namespace Nimbus.Shared.Services
 {
@@ -42,10 +43,37 @@ namespace Nimbus.Shared.Services
             try { return await _context.Addresses.FindAsync(id); }
             catch { return null; }
         }
-        //public List<Address> GetStops(int id)
-        //{
-        //    return _context.Addresses
-        //}
+        public async Task<List<Address>> GetAddressesByRoute(int routeId)
+        {
+            List<Address> addresses = await Task.Run(() => _context.Addresses.Where(a => a.routeId == routeId).ToList());
+            return addresses;
+        }
+        public async Task ConvertToJSAddressByRoute(int routeId)
+        {
+            List<Address> addresses = GetAddressesByRoute(routeId).Result;
+            string jsAddress;
+            int counter = 0;
+            foreach (var item in addresses)
+            {
+                counter += 1;
+                string streetNumber = item.streetNumber.ToString();
+                string streetName = item.streetName;
+                string city = item.city;
+                string state = item.state;
+                string zip = item.zipCode.ToString();
+                string fullAddress = streetNumber + "+" + streetName + "+" + city + "+" + state + "+" + zip;
+                    if (counter < addresses.Count())
+                {
+                    fullAddress += "|";
+                }
+
+            }
+
+        }
+        public async Task GetCordinatesOfAddress()
+        {
+
+        }
 
         }
 }

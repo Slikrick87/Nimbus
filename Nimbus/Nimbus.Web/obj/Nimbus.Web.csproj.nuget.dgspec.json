@@ -84,6 +84,10 @@
             "Microsoft.Exchange.WebServices": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[9.0.40, )"
             }
           },
           "imports": [
@@ -271,6 +275,10 @@
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[9.0.40, )"
             }
           },
           "imports": [

@@ -60,5 +60,10 @@ namespace Nimbus.Shared.Repositories
             route.truck = truck;
             _context.SaveChanges();
         }
+        public async Task<List<Address>> GetAddressesByRoute(int routeId)
+        {
+            List<Address> addresses = await Task.Run(() => _context.Addresses.Where(a => a.routeId == routeId).ToList());
+            return addresses;
+        }
     }
 }

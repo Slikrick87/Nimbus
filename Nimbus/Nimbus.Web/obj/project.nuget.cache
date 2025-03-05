@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9/TuwAYgYYQ=",
+  "dgSpecHash": "s+jkDGC+Lws=",
   "success": true,
   "projectFilePath": "C:\\CodeYou\\SoftwareDevModule\\NimbusApp\\Nimbus2\\Nimbus\\Nimbus\\Nimbus.Web\\Nimbus.Web.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,8 @@
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.1\\microsoft.extensions.primitives.9.0.1.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.jsinterop\\9.0.0\\microsoft.jsinterop.9.0.0.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.jsinterop.webassembly\\9.0.0\\microsoft.jsinterop.webassembly.9.0.0.nupkg.sha512",
+    "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.maui.essentials\\9.0.40\\microsoft.maui.essentials.9.0.40.nupkg.sha512",
+    "C:\\Users\\rjtom\\.nuget\\packages\\microsoft.maui.graphics\\9.0.40\\microsoft.maui.graphics.9.0.40.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
     "C:\\Users\\rjtom\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.10\\sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",

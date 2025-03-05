@@ -15,7 +15,8 @@
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Design": "9.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.1",
-          "Microsoft.Exchange.WebServices": "2.2.0"
+          "Microsoft.Exchange.WebServices": "2.2.0",
+          "Microsoft.Maui.Essentials": "9.0.40"
         },
         "runtime": {
           "Nimbus.Shared.dll": {}
@@ -630,6 +631,25 @@
           }
         }
       },
+      "Microsoft.Maui.Essentials/9.0.40": {
+        "dependencies": {
+          "Microsoft.Maui.Graphics": "9.0.40"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Maui.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "9.0.4025.11020"
+          }
+        }
+      },
+      "Microsoft.Maui.Graphics/9.0.40": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Maui.Graphics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "9.0.4025.11020"
+          }
+        }
+      },
       "Mono.TextTemplating/3.0.0": {
         "dependencies": {
           "System.CodeDom": "6.0.0"
@@ -1136,6 +1156,20 @@
       "sha512": "sha512-efQKxKUPe8OuH0hRiYsvBJkhhPzIYFNcr9+3wanQ7Bch/wr1JWNd90GYiPLtkSHepE1zMEoaLkAxi5N5/eyC4Q==",
       "path": "microsoft.jsinterop/9.0.0",
       "hashPath": "microsoft.jsinterop.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Maui.Essentials/9.0.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bVbLoZmAyLjlUiYf85aKq3TIqcIHZteHu6RqiG7RA3Gs6G7F1Tj7rEh9l4Nbl3UCxu36548JZNbTKfElzJUWyA==",
+      "path": "microsoft.maui.essentials/9.0.40",
+      "hashPath": "microsoft.maui.essentials.9.0.40.nupkg.sha512"
+    },
+    "Microsoft.Maui.Graphics/9.0.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RqTcO4BzxrgXyjVFfZ7Pt3TsRfOp2Q+GIL+qrCzFDacAj+GKkruTkoj9VOgfZ7Ct/TIRNCUOv4yt90mpmsjtZg==",
+      "path": "microsoft.maui.graphics/9.0.40",
+      "hashPath": "microsoft.maui.graphics.9.0.40.nupkg.sha512"
     },
     "Mono.TextTemplating/3.0.0": {
       "type": "package",
