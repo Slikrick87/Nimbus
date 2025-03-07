@@ -14,9 +14,9 @@
     @* <h1>Selected Route: @route.Id, @route.nickName</h1> *@
     <div>
         <h3>Enter Current Mileage: </h3>
-        <h3>@TruckRepository.GetTruckById(SelectionService.selectedTruck.id).mileage</h3>
+        <h3>@TruckRepository.GetTruckByIdAsync(SelectionService.selectedTruck.id).Result.mileage</h3>
         <input type="number" @bind="updatedMileage" />
-        <button class="btn btn-primary" @onclick="UpdateMileage">Set Mileage</button>
+        <button class="btn btn-primary" @onclick="UpdateMileageAsync">Set Mileage</button>
     </div>
     <div class="nav-item px-3">
         <NavLink class="nav-link" href="selectRoute">
@@ -27,7 +27,7 @@
 else if (SelectionService.selectedTruck == null)
 {
     <h1>Select Truck</h1>
-    foreach (TruckEntity truck in TruckRepository.GetAllTrucks())
+    foreach (TruckEntity truck in TruckRepository.GetAllTrucksAsync().Result)
     {
         <div>
             <input type="checkbox" @onchange="e => OnCheckboxChange(e, truck)" />

@@ -36,9 +36,9 @@ namespace Nimbus.Shared.Pages
                 return Task.CompletedTask;
             }
         }
-        public async Task UpdateMileage()
+        public async Task UpdateMileageAsync()
         {
-            Task taskOne = Task.Run(() => TruckRepository.AdjustMileage(SelectionService.selectedTruck.id, updatedMileage));
+            Task taskOne = Task.Run(() => TruckRepository.AdjustMileageAsync(SelectionService.selectedTruck.id, updatedMileage));
         }
     }
 }

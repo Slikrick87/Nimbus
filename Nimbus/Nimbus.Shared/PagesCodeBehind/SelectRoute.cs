@@ -27,7 +27,7 @@ namespace Nimbus.Shared.Pages
             try
             {
                 Task taskOne = Task.Run(() => RouteRepository.LinkTruckAsync(SelectionService.selectedTruck.id, SelectionService.selectedRoute.Id));
-                Task taskTwo = Task.Run(() => TruckRepository.LinkRoute(SelectionService.selectedRoute.Id, SelectionService.selectedTruck.id));
+                Task taskTwo = Task.Run(() => TruckRepository.LinkRouteAsync(SelectionService.selectedRoute.Id, SelectionService.selectedTruck.id));
                 await Task.WhenAll(taskOne, taskTwo);
             }
             finally

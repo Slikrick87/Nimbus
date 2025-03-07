@@ -62,7 +62,9 @@
     })
     }
 
-    
+
+
+
 
 </script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=@Keys.mapsKey"></script>
@@ -70,7 +72,7 @@
 @code {
 
     //added GeoCodeResult class, locations list, and GetAddressesAndGeocode method
-
+    //need to call an addmarker method to add markers to the map
 
 
     public class GeoCodeResult
@@ -87,7 +89,8 @@
         try
         {
             await GetAddressesAndGeocode();
-            await JS.InvokeVoidAsync("initMap");
+            var serializedLocations = JsonSerializer.Serialize(locationsGeoCode);
+            await JS.InvokeVoidAsync("initMap", serializedLocations);
         }
         catch (Exception ex)
         {
@@ -108,11 +111,11 @@
 
                 var json = await JS.InvokeAsync<string>("geocodeAddress", address);
                 var location = JsonSerializer.Deserialize<GeoCodeResult>(json);
-                
-                locationsJson.Add(JsonSerializer.Serialize(location));
+                locationsGeoCode.Add(location);
             }
             //await JS.InvokeVoidAsync("geocodeAddress", addressStrings);
             Console.WriteLine("Locations List:", JsonSerializer.Serialize(locationsJson));
+            //await JS.InvokeVoidAsync("addMarkers", (locationsGeoCode));
             //await JS.InvokeVoidAsync("initMap");
         }
     }

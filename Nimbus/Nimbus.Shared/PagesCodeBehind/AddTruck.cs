@@ -15,10 +15,10 @@ namespace Nimbus.Shared.Pages
         public TruckEntity truck;
         public int TruckId = 0;
         public int TruckMileage = 0;
-        public void AddNewTruck()
+        public async Task AddNewTruck()
         {
-            truck = TruckRepository.CreateNewTruck(mileage, 0, 0, 0, 0, 0);
-            TruckRepository.AddTruck(truck);
+            truck = await TruckRepository.CreateNewTruckAsync(mileage, 0, 0, 0, 0, 0);
+            await TruckRepository.AddTruckAsync(truck);
 
         }
     }
