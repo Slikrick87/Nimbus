@@ -1,2 +1,4 @@
 .vs/
-CodeYou/SoftwareDevModule/NimbusApp/Nimbus2/Nimbus/Nimbus/Nimbus.Shared/PagesCodeBehind/Keys.cs
+/bin/
+Nimbus/Nimbus.Shared/PagesCodeBehind/Keys.cs
+Nimbus/Nimbus/obj/*

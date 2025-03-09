@@ -58,6 +58,7 @@
     new google.maps.Marker({
     position:  { lat: location.lat, lng: location.lng },
     map: map,
+    //label: way to differiantate stops preferably by numbers
     });
     })
     }
@@ -83,6 +84,7 @@
     }
     List<GeoCodeResult> locationsGeoCode = new List<GeoCodeResult>();
     List<String> locationsJson = new List<String>();
+    //List<LocationObject> enrichedLocationsJson = new List<LocationObject>();
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -111,6 +113,17 @@
 
                 var json = await JS.InvokeAsync<string>("geocodeAddress", address);
                 var location = JsonSerializer.Deserialize<GeoCodeResult>(json);
+
+                // build a locationObject here and any other properties we care about
+                //just enriching the data
+                //var enrichedLocation = new LocationObject
+                //{
+                // GeoLocation = location
+                // Title =
+                // 
+                // }
+                //enrichedLocationsJson.Add(JsonSerializer.Serialize)
+
                 locationsGeoCode.Add(location);
             }
             //await JS.InvokeVoidAsync("geocodeAddress", addressStrings);
