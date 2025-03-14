@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Nimbus\\Nimbus\\Nimbus.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Nimbus.WebApi\\Nimbus.WebApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

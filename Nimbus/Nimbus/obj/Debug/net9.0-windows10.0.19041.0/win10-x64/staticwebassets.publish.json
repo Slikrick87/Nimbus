@@ -1,11 +1,22 @@
 {
   "Version": 1,
-  "Hash": "+t5KpeTq3wpwm/ZzAh7kS7cAForRDut++8HJtq2yVyA=",
+  "Hash": "I9v/8YsYb1Qm2LysHVPUQy/i3/vaOclNSY11q6Pybyw=",
   "Source": "Nimbus",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\CodeYou\\SoftwareDevModule\\NimbusApp\\Nimbus2\\Nimbus\\Nimbus.WebApi\\Nimbus.WebApi.csproj",
+      "Version": 2,
+      "Source": "Nimbus.WebApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework"
+    },
     {
       "Identity": "C:\\CodeYou\\SoftwareDevModule\\NimbusApp\\Nimbus2\\Nimbus\\Nimbus\\Nimbus.Shared\\Nimbus.Shared.csproj",
       "Version": 2,
@@ -2156,7 +2167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         },
         {
           "Name": "Vary",
@@ -2211,7 +2222,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         },
         {
           "Name": "Vary",
@@ -2260,7 +2271,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2301,7 +2312,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         },
         {
           "Name": "Vary",
@@ -2346,7 +2357,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         },
         {
           "Name": "Vary",
@@ -2393,7 +2404,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         },
         {
           "Name": "Vary",
@@ -2456,7 +2467,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         },
         {
           "Name": "Vary",
@@ -2513,7 +2524,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2562,7 +2573,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         },
         {
           "Name": "Vary",
@@ -2615,7 +2626,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:03 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:52 GMT"
         },
         {
           "Name": "Vary",
@@ -3690,7 +3701,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3757,7 +3768,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3826,7 +3837,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Link",
@@ -3871,7 +3882,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3924,7 +3935,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3979,7 +3990,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4038,7 +4049,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4099,7 +4110,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Link",
@@ -4136,7 +4147,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4181,7 +4192,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 16:17:04 GMT"
+          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
         },
         {
           "Name": "Cache-Control",

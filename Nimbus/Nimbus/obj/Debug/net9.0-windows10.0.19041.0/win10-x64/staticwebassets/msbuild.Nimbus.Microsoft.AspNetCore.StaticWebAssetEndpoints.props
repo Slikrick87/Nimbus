@@ -28,13 +28,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Nimbus.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mj7bwlo1g0"},{"Name":"integrity","Value":"sha256-8k7DHOeq\u002BZQuayYHbTBvhIQHd\u002B4olsCIAok7yijTHyI="},{"Name":"label","Value":"Nimbus.styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"77"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228k7DHOeq\u002BZQuayYHbTBvhIQHd\u002B4olsCIAok7yijTHyI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 16:17:04 GMT"},{"Name":"Link","Value":"\u003C_content/Nimbus.Shared/Nimbus.Shared.enyu7wy0nz.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"77"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228k7DHOeq\u002BZQuayYHbTBvhIQHd\u002B4olsCIAok7yijTHyI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Mar 2025 01:13:53 GMT"},{"Name":"Link","Value":"\u003C_content/Nimbus.Shared/Nimbus.Shared.enyu7wy0nz.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="Nimbus.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Nimbus.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8k7DHOeq\u002BZQuayYHbTBvhIQHd\u002B4olsCIAok7yijTHyI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"77"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228k7DHOeq\u002BZQuayYHbTBvhIQHd\u002B4olsCIAok7yijTHyI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 16:17:04 GMT"},{"Name":"Link","Value":"\u003C_content/Nimbus.Shared/Nimbus.Shared.enyu7wy0nz.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"77"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228k7DHOeq\u002BZQuayYHbTBvhIQHd\u002B4olsCIAok7yijTHyI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Mar 2025 01:13:53 GMT"},{"Name":"Link","Value":"\u003C_content/Nimbus.Shared/Nimbus.Shared.enyu7wy0nz.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

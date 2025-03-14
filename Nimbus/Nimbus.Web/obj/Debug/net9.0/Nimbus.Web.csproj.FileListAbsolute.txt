@@ -1,0 +1,7 @@
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web\obj\Debug\net9.0\Nimbus.Web.csproj.AssemblyReference.cache
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web\obj\Debug\net9.0\Nimbus.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web\obj\Debug\net9.0\Nimbus.Web.AssemblyInfoInputs.cache
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web\obj\Debug\net9.0\Nimbus.Web.AssemblyInfo.cs
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web\obj\Debug\net9.0\Nimbus.Web.csproj.CoreCompileInputs.cache
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web\obj\Debug\net9.0\Nimbus.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web\obj\Debug\net9.0\Nimbus.Web.sourcelink.json

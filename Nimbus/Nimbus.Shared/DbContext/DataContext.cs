@@ -59,6 +59,7 @@ namespace Nimbus.Shared
                 .WithOne()
                 .HasForeignKey<TruckEntity>(t => t.routeId)
                 .IsRequired(false);
+                //.OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<TruckEntity>()
                 .ToTable("Trucks");
@@ -73,6 +74,7 @@ namespace Nimbus.Shared
                 .HasMany(r => r.stops)
                 .WithOne(a => a.route)
                 .HasForeignKey(a => a.routeId);
+                //.OnDelete(DeleteBehavior.Cascade);
                 
             modelBuilder.Entity<RouteEntity>()
                 .ToTable("Routes");
@@ -81,6 +83,7 @@ namespace Nimbus.Shared
                 .WithOne()
                 .HasForeignKey<RouteEntity>(r => r.truckId)
                 .IsRequired(false);
+                //.OnDelete(DeleteBehavior.SetNull);
 
 
             //Hey update relationships like this ^^^^^^

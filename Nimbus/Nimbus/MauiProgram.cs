@@ -13,7 +13,7 @@ using System.Security.Cryptography.X509Certificates;
 namespace Nimbus
 {
     
-    public static class MauiProgram
+public static class MauiProgram
     {
         public static MauiApp CreateMauiApp()
         {
@@ -32,11 +32,12 @@ namespace Nimbus
             .AddSingleton<IAddressRepository, AddressRepository>()
             .AddSingleton<IRouteRepository, RouteRepository>()
             .AddSingleton<ITruckRepository, TruckRepository>()
-            .AddSingleton<IGeoLocationService,GeoLocationService>()
+            .AddSingleton<IGeoLocationService, GeoLocationService>()
             .AddSingleton<SelectionService>()
             .AddMauiBlazorWebView();
 
-            
+            //builder.Services.AddControllers();
+
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();

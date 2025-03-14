@@ -1,0 +1,8 @@
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web.Client\obj\Debug\net9.0\Nimbus.Web.Client.csproj.AssemblyReference.cache
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web.Client\obj\Debug\net9.0\Nimbus.Web.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web.Client\obj\Debug\net9.0\Nimbus.Web.Client.AssemblyInfoInputs.cache
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web.Client\obj\Debug\net9.0\Nimbus.Web.Client.AssemblyInfo.cs
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web.Client\obj\Debug\net9.0\Nimbus.Web.Client.csproj.CoreCompileInputs.cache
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web.Client\obj\Debug\net9.0\Nimbus.Web.Client.MvcApplicationPartsAssemblyInfo.cs
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web.Client\obj\Debug\net9.0\Nimbus.Web.Client.MvcApplicationPartsAssemblyInfo.cache
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus\Nimbus.Web.Client\obj\Debug\net9.0\Nimbus.Web.Client.sourcelink.json

@@ -73,6 +73,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Nimbus.WebApi\Nimbus.WebApi.csproj" />
     <ProjectReference Include="..\Nimbus.Shared\Nimbus.Shared.csproj" />
   </ItemGroup>
 
