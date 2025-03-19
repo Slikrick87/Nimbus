@@ -25,7 +25,6 @@ public static class MauiProgram
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
 
-            // Add device-specific services used by the Nimbus.Shared project
             builder.Services.AddDbContext<DataContext>();
 
             builder.Services.AddSingleton<IFormFactor, FormFactor>()
@@ -37,6 +36,14 @@ public static class MauiProgram
             .AddMauiBlazorWebView();
 
             //builder.Services.AddControllers();
+
+
+            //if there's a database error it originates here lol
+            using (var scope = builder.Build().Services.CreateScope())
+            {
+                var dbContext = scope.ServiceProvider.GetRequiredService<DataContext>();
+                dbContext.Database.Migrate();
+            }
 
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
