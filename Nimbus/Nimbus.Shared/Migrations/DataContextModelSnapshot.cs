@@ -14,7 +14,7 @@ namespace Nimbus.Shared.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.1");
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
 
             modelBuilder.Entity("Nimbus.Shared.Entities.Address", b =>
                 {
@@ -114,7 +114,8 @@ namespace Nimbus.Shared.Migrations
                 {
                     b.HasOne("Nimbus.Shared.Entities.RouteEntity", "route")
                         .WithMany("stops")
-                        .HasForeignKey("routeId");
+                        .HasForeignKey("routeId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("route");
                 });
@@ -123,7 +124,8 @@ namespace Nimbus.Shared.Migrations
                 {
                     b.HasOne("Nimbus.Shared.Entities.TruckEntity", "truck")
                         .WithOne()
-                        .HasForeignKey("Nimbus.Shared.Entities.RouteEntity", "truckId");
+                        .HasForeignKey("Nimbus.Shared.Entities.RouteEntity", "truckId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("truck");
                 });
@@ -132,7 +134,8 @@ namespace Nimbus.Shared.Migrations
                 {
                     b.HasOne("Nimbus.Shared.Entities.RouteEntity", "route")
                         .WithOne()
-                        .HasForeignKey("Nimbus.Shared.Entities.TruckEntity", "routeId");
+                        .HasForeignKey("Nimbus.Shared.Entities.TruckEntity", "routeId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("route");
                 });

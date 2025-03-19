@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Nimbus.Shared.Entities;
+using Nimbus.Shared.Repositories;
 
 namespace Nimbus.Shared.Services
 {
@@ -21,5 +22,8 @@ namespace Nimbus.Shared.Services
         public Task<Address> GetAddressByIdAsync(int id);
         public Task<List<Address>> GetAddressesByRoute(int routeId);
         public Task ConvertToJSAddressByRoute(int routeId);
+        public Task<Address> FindAddressForRouteByIdAsync(int RouteId, int AddressId);
+        public Task UpdateAddressAsync(Address address);
+        public Task DeleteAddressAsync(int id);
     }
 }

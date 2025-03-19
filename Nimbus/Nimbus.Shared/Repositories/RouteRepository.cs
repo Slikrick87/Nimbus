@@ -65,5 +65,11 @@ namespace Nimbus.Shared.Repositories
             List<Address> addresses = await Task.Run(() => _context.Addresses.Where(a => a.routeId == routeId).ToList());
             return addresses;
         }
+        public async Task DeleteRouteAsync(int id)
+        {
+            RouteEntity route = await GetRouteByIdAsync(id);
+            _context.Routes.Remove(route);
+            await _context.SaveChangesAsync();
+        }
     }
 }

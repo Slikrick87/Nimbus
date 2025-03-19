@@ -78,4 +78,3 @@ wwwroot\Nimbus.styles.css
 AboutAssets.txt
 wwwroot\app.css
 wwwroot\index.html
-runtimes\win-x64\native\WebView2Loader.dll

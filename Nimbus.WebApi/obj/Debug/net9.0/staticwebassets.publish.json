@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jeDdG3QkZILP6exj0kJXbvndbZ246IvfADLhgIR4/4Q=",
+  "Hash": "n6l44IiyHwjaE5ghFDTCyZIgcaV8oAIjHdko1BjYZyY=",
   "Source": "Nimbus.WebApi",
   "BasePath": "_content/Nimbus.WebApi",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "Nimbus.Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],
@@ -2529,7 +2529,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2596,7 +2596,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2665,7 +2665,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Link",
@@ -2710,7 +2710,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2763,7 +2763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2818,7 +2818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2877,7 +2877,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2938,7 +2938,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Link",
@@ -2975,7 +2975,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3020,7 +3020,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 01:13:53 GMT"
+          "Value": "Sun, 16 Mar 2025 17:12:44 GMT"
         },
         {
           "Name": "Cache-Control",

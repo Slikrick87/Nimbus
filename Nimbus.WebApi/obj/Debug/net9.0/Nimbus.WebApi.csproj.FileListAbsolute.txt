@@ -294,3 +294,10 @@ C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\ne
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.Authorization.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.Components.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.Components.Web.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.Metadata.dll
+C:\CodeYou\SoftwareDevModule\NimbusApp\Nimbus2\Nimbus\Nimbus.WebApi\bin\Debug\net9.0\Microsoft.JSInterop.dll

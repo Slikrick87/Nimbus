@@ -143,12 +143,28 @@ namespace Nimbus.WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteRouteEntity(int id)
         {
-            var routeEntity = await _context.Routes.FindAsync(id);
+            var routeEntity = await _context.Routes
+                .Include(r => r.stops)
+                .Include(r => r.truck)
+                .FirstOrDefaultAsync(r => r.Id == id);
+
             if (routeEntity == null)
             {
                 return NotFound();
             }
 
+            if (routeEntity.truck != null)
+            {
+                routeEntity.truck.routeId = null;
+            }
+
+            if (routeEntity.stops != null )
+            {
+                foreach (Address stop in routeEntity.stops)
+                {
+                    stop.routeId = null;
+                }
+            }
             _context.Routes.Remove(routeEntity);
             await _context.SaveChangesAsync();
 

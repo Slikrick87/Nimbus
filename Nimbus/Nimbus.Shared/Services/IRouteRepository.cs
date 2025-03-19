@@ -20,5 +20,6 @@ namespace Nimbus.Shared.Services
         public Task<Address> AddStopAsync(RouteEntity route, Address address);
         public Task<List<Address>> GetStopsAsync(int routeId);
         public Task LinkTruckAsync(int routeId, int truckId);
+        public Task DeleteRouteAsync(int id);
     }
 }

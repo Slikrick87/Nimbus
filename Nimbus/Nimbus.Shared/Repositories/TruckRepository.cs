@@ -101,6 +101,11 @@ namespace Nimbus.Shared.Repositories
             }
             await _context.SaveChangesAsync();
         }
-
+        public async Task DeleteTruckAsync(int id)
+        {
+            TruckEntity truck = await GetTruckByIdAsync(id);
+            _context.Trucks.Remove(truck);
+            await _context.SaveChangesAsync();
+        }
     }
 }

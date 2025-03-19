@@ -20,9 +20,14 @@ namespace Nimbus.Shared.Pages
         public int zipCode;
         private async Task AddNewStopAsync()
         {
-            await Task.Run(() => newAddress = AddressRepository.CreateNewAddressWithRouteAsync(streetNumber, streetName, city, state, zipCode, SelectionService.selectedRoute).Result);
-            Task taskTwo = Task.Run(() => RouteRepository.AddStopAsync(SelectionService.selectedRoute, newAddress));
-            stopsAdded++;
+            try
+            {
+                await Task.Run(() => newAddress = AddressRepository.CreateNewAddressWithRouteAsync(streetNumber, streetName, city, state, zipCode, SelectionService.selectedRoute).Result);
+                Task taskTwo = Task.Run(() => RouteRepository.AddStopAsync(SelectionService.selectedRoute, newAddress));
+                Task taskThree = Task.Run(() => SelectionService.orderedStopsForRoute.Add(newAddress));
+                stopsAdded++;
+            }
+            catch { Console.WriteLine("Error in adding new address"); }
 
         }
 

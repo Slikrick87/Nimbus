@@ -1,9 +1,8 @@
 ﻿using Nimbus.Shared.Services;
 using Nimbus.Shared.Entities;
 using Microsoft.EntityFrameworkCore;
-using Nimbus.Shared.Repositories;
 
-namespace Nimbus.Shared.Services
+namespace Nimbus.Shared.Repositories
 {
     public class AddressRepository : IAddressRepository
     {
@@ -17,21 +16,21 @@ namespace Nimbus.Shared.Services
         }
         public async Task AddStopAsync(Address address)
         {
-           await Task.Run(() => _context.Addresses.Add(address));
-           Task taskTwo = Task.Run(() => _context.SaveChangesAsync());
+            await Task.Run(() => _context.Addresses.Add(address));
+            Task taskTwo = Task.Run(() => _context.SaveChangesAsync());
         }
         public async Task<Address> CreateNewAddressAsync(int streetNumber, string streetName, string city, string state, int zip)
         {
-            Address address = await Task.Run(() => 
+            Address address = await Task.Run(() =>
                 address = new Address(streetNumber, streetName, city, state, zip));
 
             return address;
         }
         public async Task<Address> CreateNewAddressWithRouteAsync(int streetNumber, string streetName, string city, string state, int zip, RouteEntity route)
         {
-            Address address = await Task.Run(() => 
+            Address address = await Task.Run(() =>
                 new Address(streetNumber, streetName, city, state, zip, route));
-            
+
             return address;
         }
         public async Task<List<Address>> GetAllAddressesAsync()
@@ -62,7 +61,7 @@ namespace Nimbus.Shared.Services
                 string state = item.state;
                 string zip = item.zipCode.ToString();
                 string fullAddress = streetNumber + "+" + streetName + "+" + city + "+" + state + "+" + zip;
-                    if (counter < addresses.Count())
+                if (counter < addresses.Count())
                 {
                     fullAddress += "|";
                 }
@@ -70,6 +69,31 @@ namespace Nimbus.Shared.Services
             }
 
         }
-        
+        public async Task UpdateAddressAsync(Address address)
+        {
+            _context.Addresses.Update(address);
+            await _context.SaveChangesAsync();
         }
+        public async Task<Address> FindAddressForRouteByIdAsync(int RouteId, int AddressId)
+        {
+            RouteRepository routeRepository = new RouteRepository(_context);
+            RouteEntity route = await routeRepository.GetRouteByIdAsync(RouteId);
+            try
+            {
+                Address address = route.stops.FirstOrDefault(a => a.id == AddressId);
+                return address;
+            }
+            catch
+            {
+                return null;
+            }
+
+        }
+        public async Task DeleteAddressAsync(int id)
+        {
+            Address address = await GetAddressByIdAsync(id);
+            _context.Addresses.Remove(address);
+            await _context.SaveChangesAsync();
+        }
+    }
 }

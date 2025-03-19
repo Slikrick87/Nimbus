@@ -23,5 +23,6 @@ namespace Nimbus.Shared.Services
         public Task AdjustMileageAsync(int truckId, int mileage);
 	    public Task LinkRouteAsync(int truckId, int routeId);
         public Task ResetMileageAsync(TruckEntity truck, String choice);
+        public Task DeleteTruckAsync(int id);
     }
 }

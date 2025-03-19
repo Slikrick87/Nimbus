@@ -58,8 +58,8 @@ namespace Nimbus.Shared
                 .HasOne(t => t.route)
                 .WithOne()
                 .HasForeignKey<TruckEntity>(t => t.routeId)
-                .IsRequired(false);
-                //.OnDelete(DeleteBehavior.SetNull);
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<TruckEntity>()
                 .ToTable("Trucks");
@@ -74,7 +74,6 @@ namespace Nimbus.Shared
                 .HasMany(r => r.stops)
                 .WithOne(a => a.route)
                 .HasForeignKey(a => a.routeId);
-                //.OnDelete(DeleteBehavior.Cascade);
                 
             modelBuilder.Entity<RouteEntity>()
                 .ToTable("Routes");
@@ -82,8 +81,8 @@ namespace Nimbus.Shared
                 .HasOne(r => r.truck)
                 .WithOne()
                 .HasForeignKey<RouteEntity>(r => r.truckId)
-                .IsRequired(false);
-                //.OnDelete(DeleteBehavior.SetNull);
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.SetNull);
 
 
             //Hey update relationships like this ^^^^^^
@@ -119,7 +118,8 @@ namespace Nimbus.Shared
                 .HasOne(a => a.route)
                 .WithMany(r => r.stops)
                 .HasForeignKey(a => a.routeId)
-                .IsRequired(false);
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.SetNull);
             //modelBuilder.Entity<Address>(entity =>
             //{
             //    entity.HasKey(e => new { e.streetNumber, e.streetName, e.city, e.state, e.zipCode });
